@@ -1,64 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Starterkit Laravel 9
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Starterkit 
+- Laravel 9
+- Vue 3
+- inertia
+- Jetstream
+- tailwindcss
+- Webseite
+- Anwendung für Administratoren
+- Anwendung für Mitarbeiter
+- Anwendung für Kunden
+    
 
-## About Laravel
+## Branches
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Damit du die Möglichkeit hast, die Entwicklung der Anwendung Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in sogenannten Branches dokumentiert.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Installation
+Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "Installation".  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Anwendung Homepage
+Die im Kapitel "Anwendung Homepage" beschriebenen Codeänderungen findest du im Branch "Homepage".  
 
-## Learning Laravel
+### Anwendung Administrator
+Die im Kapitel "Anwendung Administrator" beschriebenen Codeänderungen findest du im Branch "Administrator".  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Anwendung Redakteur
+Die im Kapitel "Anwendung Redakteur" beschriebenen Codeänderungen findest du im Branch "Redakteur".  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Anwendung Leser
+Die im Kapitel "Anwendung Leser" beschriebenen Codeänderungen findest du im Branch "Leser".  
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 1. Starterkit clonen
 
-### Premium Partners
+```md
+git clone https://github.com/OliverReinking/laravel-nine-starterkit.git newspilot
+cd newspilot
+code .
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### 2. Datenbank
 
-## Contributing
+Datei .env.example umbenennen in .env.  
+Datenbank erstellen und in Datei .env "verknüpfen".
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Valet
 
-## Code of Conduct
+Passe .env ein:
+```php
+    APP_URL=http://newspilot.test
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Führe folgenden Befehl aus, um die neue Anwendung mit Valet zu verlinken:
+```md
+    valet link newspilot
+```
 
-## Security Vulnerabilities
+### 4. composer
+```md
+composer install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. npm
+
+```md
+npm install
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+```
+
+### Anwendung aufrufen
+Damit ist die Anwendung **Starterkit Laravel 9** installiert.
+
+```md
+npm run watch
+```
+
+Anwendung im Browser aufrufen mit **newspilot.test**
+
+
+## Buch **Laravel 9**
+
+In meinen Buch **Laravel 9** habe ich die Implementierung der obigen Anwendung **Newspilot** im Detail beschrieben.  
+
+![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
+
+## Anwendungsbeschreibung
+
+### newspilot.php
+Im Verzeichnis config habe ich die neue Datei newspilot.php erstellt. 
+Hier sind anwendungsspezifische Informationen hinterlegt.
+
+### web.php
+Hier sind alle Routen der "Anwendungen" mit ihren "Routen" hinterlegt:
+- Homepage (offene Webseite)
+- Administrator (Intranet)
+- Mitarbeiter (Intranet)
+- Kunde (Extranet)
+
+### resources/js/Pages/Application
+Ich habe im Verzeichnis resources/js/Pages das neue Unterverzeichnis Application angelegt.  
+Darunter habe ich folgende Unterverzeichnisse angelegt:
+- Homepage
+- Admin
+- Employee
+- Customer
+
+#### Homepage (resources/js/Pages/Application)
+Das Verzeichnis Homepage enthält die Webseiten:
+- Home.vue (die Startseite der Homepage)
+- Imprint.vue
+- JobApplication.vue (Bewerbungsformular)- 
+- Mission.vue
+- NoApplicationFound.vue
+- NoPageFound.vue
+- Privacy.vue
+- UserIsNoAdmin.vue
+- UserIsNoEmployee.vue
+- UserIsNoCustomer.vue
+
+### HandleInertiaRequest.php
+Hier habe ich die Funktion share angepasst. 
+
+### RouteServiceProvicer
+Hier habe ich die Konstante Home angepasst. 
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Package **laravel-nine-starterkit** is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
