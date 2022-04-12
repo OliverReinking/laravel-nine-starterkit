@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\RequestJobApplication;
 
 class HomeController extends Controller
 {
@@ -36,8 +38,9 @@ class HomeController extends Controller
     {
         return Inertia::render('Application/Homepage/JobApplication');
     }
-    public function home_job_application_send()
+    public function home_job_application_send(RequestJobApplication $request)
     {
+        Log::info("home_job_application_send");
         return Redirect::route('job_application')
             ->with([
                 'success' => 'Die Bewerbungsdaten wurden erfolgreich übermittelt.

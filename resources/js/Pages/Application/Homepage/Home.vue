@@ -83,7 +83,7 @@
                     kann abdanken, wenn er harmlos wird.
                 </h2>
                 <p class="text-base text-gray-700 dark:text-white md:text-lg">
-                    sagte Willy Brandt. Bewirb dich jetzt, damit Journlismus
+                    sagte Willy Brandt. Bewirb dich jetzt, damit Journalismus
                     nicht harmlos wird.
                 </p>
             </div>
