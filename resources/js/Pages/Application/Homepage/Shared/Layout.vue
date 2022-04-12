@@ -86,6 +86,28 @@
                             <li
                                 v-bind:class="{
                                     'w-full': isOpen,
+                                    hidden: !isOpen,
+                                }"
+                            >
+                                <nav-link
+                                    label="Login"
+                                    route-name="login"
+                                ></nav-link>
+                            </li>
+                            <li
+                                v-bind:class="{
+                                    'w-full': isOpen,
+                                    hidden: !isOpen,
+                                }"
+                            >
+                                <nav-link
+                                    label="Registrierung"
+                                    route-name="register"
+                                ></nav-link>
+                            </li>
+                            <li
+                                v-bind:class="{
+                                    'w-full': isOpen,
                                 }"
                             >
                                 <button-change-mode
@@ -111,14 +133,14 @@
 
         <!-- Footer -->
         <footer
-            class="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
+            class="w-full bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
         >
             <div class="container mx-auto px-2 lg:px-8 pt-2">
                 <div class="lg:flex lg:items-center lg:justify-between md:p-3">
                     <ul
                         class="lg:order-2 flex flex-wrap flex-row items-center justify-around mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
                     >
-                        <li class="mr-2 md:mr-6">
+                        <li class="mr-2 md:mr-6 hidden md:block">
                             <footer-link
                                 label="Über uns"
                                 route-name="about"
@@ -136,13 +158,13 @@
                                 route-name="privacy"
                             ></footer-link>
                         </li>
-                        <li class="mr-2 md:mr-6">
+                        <li class="mr-2 md:mr-6 hidden md:block">
                             <footer-link
                                 label="Login"
                                 route-name="login"
                             ></footer-link>
                         </li>
-                        <li class="mr-2 md:mr-6">
+                        <li class="mr-2 md:mr-6 hidden md:block">
                             <footer-link
                                 label="Registrierung"
                                 route-name="register"
@@ -196,7 +218,7 @@ export default {
         IconMenu,
         IconClose,
         ButtonChangeMode,
-        Toast
+        Toast,
     },
 
     setup() {

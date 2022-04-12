@@ -27822,7 +27822,7 @@ var _hoisted_10 = {
   "class": "container mx-auto px-2 lg:px-8 pt-2 lg:pt-8"
 };
 var _hoisted_11 = {
-  "class": "fixed bottom-0 left-0 w-full bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
+  "class": "w-full bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
 };
 var _hoisted_12 = {
   "class": "container mx-auto px-2 lg:px-8 pt-2"
@@ -27834,7 +27834,7 @@ var _hoisted_14 = {
   "class": "lg:order-2 flex flex-wrap flex-row items-center justify-around mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
 };
 var _hoisted_15 = {
-  "class": "mr-2 md:mr-6"
+  "class": "mr-2 md:mr-6 hidden md:block"
 };
 var _hoisted_16 = {
   "class": "mr-2 md:mr-6"
@@ -27843,10 +27843,10 @@ var _hoisted_17 = {
   "class": "mr-2 md:mr-6"
 };
 var _hoisted_18 = {
-  "class": "mr-2 md:mr-6"
+  "class": "mr-2 md:mr-6 hidden md:block"
 };
 var _hoisted_19 = {
-  "class": "mr-2 md:mr-6"
+  "class": "mr-2 md:mr-6 hidden md:block"
 };
 var _hoisted_20 = {
   "class": "lg:order-1 text-xs md:text-sm text-gray-500 dark:text-gray-400 text-center lg:text-left"
@@ -27933,6 +27933,26 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_nav_link, {
     label: "Kontakt",
     "route-name": "contact"
+  })], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
+      'w-full': $setup.isOpen,
+      hidden: !$setup.isOpen
+    })
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_nav_link, {
+    label: "Login",
+    "route-name": "login"
+  })], 2
+  /* CLASS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
+      'w-full': $setup.isOpen,
+      hidden: !$setup.isOpen
+    })
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_nav_link, {
+    label: "Registrierung",
+    "route-name": "register"
   })], 2
   /* CLASS */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
