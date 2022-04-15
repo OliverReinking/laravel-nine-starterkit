@@ -40,7 +40,6 @@ class HomeController extends Controller
     }
     public function home_job_application_send(RequestJobApplication $request)
     {
-        Log::info("home_job_application_send");
         return Redirect::route('job_application')
             ->with([
                 'success' => 'Die Bewerbungsdaten wurden erfolgreich übermittelt.

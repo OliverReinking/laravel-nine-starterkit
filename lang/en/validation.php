@@ -140,6 +140,7 @@ return [
     |
     */
 
+    'language' => 'You must be proficient in at least two :attribute.',
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
