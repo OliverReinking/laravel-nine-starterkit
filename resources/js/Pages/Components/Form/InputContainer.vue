@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-1" :class="[fullWith ? 'col-span-2' : '']">
+    <div class="mb-1" :class="[fullWith ? 'md:col-span-2' : '']">
         <slot></slot>
     </div>
 </template>
