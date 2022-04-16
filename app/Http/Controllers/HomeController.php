@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Jobs\SendMailJobApplication;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\RequestJobApplication;
 
@@ -40,6 +41,32 @@ class HomeController extends Controller
     }
     public function home_job_application_send(RequestJobApplication $request)
     {
+        // Ermittle die contactvalues
+        $job_application_values = collect();
+        //
+        $job_application_values->first_name = $request->first_name;
+        $job_application_values->last_name = $request->last_name;
+        $job_application_values->email = $request->email;
+        $job_application_values->phone = $request->phone;
+        //
+        $job_application_values->gender = "weiblich";
+        if ($request->gender = "male") {
+            $job_application_values->gender = "männlich";
+        }
+        //
+        $job_application_values->continent = $request->continent;
+        //
+        foreach ($request->languages as $key => $value) {
+            $job_application_values->$key = "nein";
+            if ($value == true) {
+                $job_application_values->$key = "ja";
+            }
+        }
+        //
+        $job_application_values->curriculum_vitae = $request->curriculum_vitae;
+        //
+        dispatch(new SendMailJobApplication($job_application_values));
+        //
         return Redirect::route('job_application')
             ->with([
                 'success' => 'Die Bewerbungsdaten wurden erfolgreich übermittelt.
