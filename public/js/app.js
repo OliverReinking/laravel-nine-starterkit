@@ -28493,26 +28493,35 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_container, null, {
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_group, null, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_label, {
-            name: "curriculum_vitae",
-            label: "Bitte geben hier Deinen Lebenslauf in sehr kompakter Form ein:"
-          }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_textarea, {
-            name: "curriculum_vitae",
-            modelValue: _ctx.form.curriculum_vitae,
-            "onUpdate:modelValue": _cache[11] || (_cache[11] = function ($event) {
-              return _ctx.form.curriculum_vitae = $event;
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_container, {
+            "full-with": true
+          }, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_label, {
+                name: "curriculum_vitae",
+                label: "Bitte geben hier Deinen Lebenslauf in sehr kompakter Form ein:"
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_textarea, {
+                name: "curriculum_vitae",
+                modelValue: _ctx.form.curriculum_vitae,
+                "onUpdate:modelValue": _cache[11] || (_cache[11] = function ($event) {
+                  return _ctx.form.curriculum_vitae = $event;
+                }),
+                rows: 12,
+                placeholder: "Bitte gebe hier Deinen Lebenslauf ein"
+              }, null, 8
+              /* PROPS */
+              , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_error, {
+                message: _ctx.errors.curriculum_vitae
+              }, null, 8
+              /* PROPS */
+              , ["message"])];
             }),
-            rows: 12,
-            placeholder: "Bitte geben hier Deinen Lebenslauf ein"
-          }, null, 8
-          /* PROPS */
-          , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_input_error, {
-            message: _ctx.errors.curriculum_vitae
-          }, null, 8
-          /* PROPS */
-          , ["message"])];
+            _: 1
+            /* STABLE */
+
+          })];
         }),
         _: 1
         /* STABLE */

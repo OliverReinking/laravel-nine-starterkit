@@ -1949,6 +1949,9 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.caret-green-500 {
+  caret-color: #22c55e;
+}
 .opacity-0 {
   opacity: 0;
 }

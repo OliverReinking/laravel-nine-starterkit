@@ -171,19 +171,21 @@
                     </input-group>
 
                     <input-subtitle>Dein Lebenslauf</input-subtitle>
-                    <input-container>
-                        <input-label
-                            name="curriculum_vitae"
-                            label="Bitte geben hier Deinen Lebenslauf in sehr kompakter Form ein:"
-                        ></input-label>
-                        <input-textarea
-                            name="curriculum_vitae"
-                            v-model="form.curriculum_vitae"
-                            :rows="12"
-                            placeholder="Bitte geben hier Deinen Lebenslauf ein"
-                        ></input-textarea>
-                        <input-error :message="errors.curriculum_vitae" />
-                    </input-container>
+                    <input-group>
+                        <input-container :full-with="true">
+                            <input-label
+                                name="curriculum_vitae"
+                                label="Bitte geben hier Deinen Lebenslauf in sehr kompakter Form ein:"
+                            ></input-label>
+                            <input-textarea
+                                name="curriculum_vitae"
+                                v-model="form.curriculum_vitae"
+                                :rows="12"
+                                placeholder="Bitte gebe hier Deinen Lebenslauf ein"
+                            ></input-textarea>
+                            <input-error :message="errors.curriculum_vitae" />
+                        </input-container>
+                    </input-group>
 
                     <input-button
                         type="button"
