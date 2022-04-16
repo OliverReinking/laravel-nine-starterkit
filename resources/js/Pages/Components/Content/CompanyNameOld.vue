@@ -1,31 +1,22 @@
 <template>
     <div
-        class="flex items-center text-gray-800 dark:text-white"
+        class="flex flex-col items-center justify-center text-gray-800 dark:text-white"
         :class="classes"
     >
-        <div v-if="withFavicon">
-            <favicon class="h-8 w-8 md:h-12 md:w-12 mr-1" />
-        </div>
         <div v-if="withLink">
             <Link :href="route(routeName)">
+                <div class="font-logo text-xl leading-normal whitespace-nowrap">
+                    Newspilot
+                </div>
                 <div
-                    class="flex flex-col items-center justify-center"
+                    v-if="withSlogan"
+                    class="font-sans font-thin text-xs text-primary leading-normal whitespace-nowrap"
                 >
-                    <div
-                        class="font-logo text-xl leading-normal whitespace-nowrap"
-                    >
-                        Newspilot
-                    </div>
-                    <div
-                        v-if="withSlogan"
-                        class="font-sans font-thin text-xs text-primary leading-normal whitespace-nowrap"
-                    >
-                        For a sustainable earth
-                    </div>
+                    For a sustainable earth
                 </div>
             </Link>
         </div>
-        <div v-else class="flex flex-col items-center justify-center">
+        <div v-else>
             <div class="font-logo text-xl leading-normal whitespace-nowrap">
                 Newspilot
             </div>
@@ -41,24 +32,17 @@
 <script>
 import { Link } from "@inertiajs/inertia-vue3";
 
-import Favicon from "@/Pages/Components/Logo/Favicon";
-
 export default {
     name: "Content_CompanyName",
     //
     components: {
         Link,
-        Favicon,
     },
     //
     props: {
         classes: {
             type: String,
             default: "",
-        },
-        withFavicon: {
-            type: Boolean,
-            required: true,
         },
         withSlogan: {
             type: Boolean,
