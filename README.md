@@ -1,6 +1,6 @@
-# Starterkit Laravel 9
+# Laravel Nine Starterkit
 
-Starterkit 
+Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
 - Vue 3
 - inertia
@@ -33,7 +33,7 @@ Die im Kapitel "Anwendung Leser" beschriebenen Codeänderungen findest du im Bra
 
 ## Installation
 
-### 1. Starterkit clonen
+### 1. Laravel Nine Starterkit clonen
 
 ```md
 git clone https://github.com/OliverReinking/laravel-nine-starterkit.git newspilot
@@ -73,7 +73,7 @@ php artisan db:seed
 ```
 
 ### Anwendung aufrufen
-Damit ist die Anwendung **Starterkit Laravel 9** installiert.
+Damit ist die Anwendung **Laravel Nine Starterkit** installiert.
 
 ```md
 npm run watch
@@ -86,7 +86,7 @@ Anwendung im Browser aufrufen mit **newspilot.test**
 
 In meinen Buch **Laravel 9** habe ich die Implementierung der obigen Anwendung **Newspilot** im Detail beschrieben.  
 
-![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
+![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Blau_4.png)
 
 ## Anwendungsbeschreibung
 
@@ -131,4 +131,4 @@ Hier habe ich die Konstante Home angepasst.
 
 ## License
 
-The Package **laravel-nine-starterkit** is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Package **Laravel Nine Starterkit** is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
