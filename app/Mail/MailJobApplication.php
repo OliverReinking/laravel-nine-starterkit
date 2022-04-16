@@ -26,8 +26,8 @@ class MailJobApplication extends Mailable
     public function build()
     {
         return $this
-        ->subject('Neue Bewerbung ist eingegangen')
-        ->markdown('emails.home.job_application')
-        ->with('job_application_values', $this->job_application_values);
+            ->subject('Neue Bewerbung ist eingegangen')
+            ->markdown('emails.home.job_application')
+            ->with('job_application_values', $this->job_application_values);
     }
 }

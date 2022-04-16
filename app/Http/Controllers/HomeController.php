@@ -54,7 +54,7 @@ class HomeController extends Controller
             $job_application_values->gender = "männlich";
         }
         //
-        $job_application_values->continent = $request->continent;
+        $job_application_values->continent = trans($request->continent);
         //
         foreach ($request->languages as $key => $value) {
             $job_application_values->$key = "nein";
