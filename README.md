@@ -17,19 +17,20 @@ Das **Laravel Nine Starterkit** besteht aus:
 Damit du die Möglichkeit hast, die Entwicklung der Anwendung Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in sogenannten Branches dokumentiert.
 
 ### Installation
-Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "Installation".  
+Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
 
 ### Anwendung Homepage
-Die im Kapitel "Anwendung Homepage" beschriebenen Codeänderungen findest du im Branch "Homepage".  
+Die im Kapitel "Anwendung Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
+Hier gibt es zusätzlich noch die Brances formular-01 und formular-02.  
 
 ### Anwendung Administrator
-Die im Kapitel "Anwendung Administrator" beschriebenen Codeänderungen findest du im Branch "Administrator".  
+Die im Kapitel "Anwendung Administrator" beschriebenen Codeänderungen findest du im Branch "administrator".  
 
 ### Anwendung Redakteur
-Die im Kapitel "Anwendung Redakteur" beschriebenen Codeänderungen findest du im Branch "Redakteur".  
+Die im Kapitel "Anwendung Redakteur" beschriebenen Codeänderungen findest du im Branch "employee".  
 
 ### Anwendung Leser
-Die im Kapitel "Anwendung Leser" beschriebenen Codeänderungen findest du im Branch "Leser".  
+Die im Kapitel "Anwendung Leser" beschriebenen Codeänderungen findest du im Branch "customer".  
 
 ## Installation
 
