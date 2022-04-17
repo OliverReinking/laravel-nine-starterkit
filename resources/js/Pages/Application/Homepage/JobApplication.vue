@@ -113,7 +113,7 @@
                             ></input-select>
                             <input-error :message="errors.gender" />
                         </input-container>
-                        <input-container :full-with="true">
+                        <input-container :full-width="true">
                             <input-label
                                 name="continent"
                                 label="Kontinent"
@@ -165,14 +165,14 @@
                                 verfassen?</input-checkbox
                             >
                         </input-container>
-                        <input-container :full-with="true">
+                        <input-container :full-width="true">
                             <input-error :message="errors.languages" />
                         </input-container>
                     </input-group>
 
                     <input-subtitle>Dein Lebenslauf</input-subtitle>
                     <input-group>
-                        <input-container :full-with="true">
+                        <input-container :full-width="true">
                             <input-label
                                 name="curriculum_vitae"
                                 label="Bitte geben hier Deinen Lebenslauf in sehr kompakter Form ein:"
