@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-1" :class="[fullWith ? 'col-span-2' : '']">
+    <div class="mb-1" :class="[fullWidth ? 'col-span-2' : '']">
         <slot></slot>
     </div>
 </template>
@@ -8,7 +8,7 @@ export default {
     name: "Form_InputContainer",
 
     props: {
-        fullWith: {
+        fullWidth: {
             type: Boolean,
             required: false,
         },
