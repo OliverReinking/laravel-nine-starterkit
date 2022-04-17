@@ -26,7 +26,6 @@
 </template>
 <script>
 import { defineComponent } from "vue";
-import { Link } from "@inertiajs/inertia-vue3";
 import HomepageLayout from "@/Pages/Application/Homepage/Shared/Layout";
 
 import UndrawTheWorldIsMine from "@/Pages/Components/UnDraw/TheWorldIsMine";
@@ -35,7 +34,6 @@ export default defineComponent({
     name: "Homepage_About",
 
     components: {
-        Link,
         HomepageLayout,
         UndrawTheWorldIsMine
     },

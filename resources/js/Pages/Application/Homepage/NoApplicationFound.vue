@@ -7,16 +7,17 @@
                         <h1
                             class="font-logo text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl"
                         >
-                            Seite wurde nicht gefunden!
+                            Anwendung wurde nicht gefunden!
                         </h1>
                         <div class="mt-2 text-gray-600 dark:text-gray-400">
                             <span
                                 class="text-lg font-extrabold text-primary dark:text-primary-dark"
-                                >"Ihr jubelt über die Macht der Presse - graut
-                                euch nie vor ihrer Tyrannei?"
+                                >"Das unsympathische an Computern ist, dass sie
+                                nur ja oder nein sagen können, aber nicht
+                                vielleicht."
                             </span>
                             <br />
-                            (Marie von Ebner-Eschenbach)
+                            (Brigitte Bardot)
                         </div>
                     </div>
                 </div>
@@ -24,9 +25,9 @@
                 <div
                     class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2"
                 >
-                    <undraw-page-not-found
+                    <undraw-warning
                         class="w-full h-full lg:max-w-2xl"
-                    ></undraw-page-not-found>
+                    ></undraw-warning>
                 </div>
             </div>
         </div>
@@ -36,14 +37,14 @@
 import { defineComponent } from "vue";
 import HomepageLayout from "@/Pages/Application/Homepage/Shared/Layout";
 
-import UndrawPageNotFound from "@/Pages/Components/UnDraw/PageNotFound";
+import UndrawWarning from "@/Pages/Components/UnDraw/Warning";
 
 export default defineComponent({
-    name: "Homepage_NoPageFound",
+    name: "Homepage_NoApplicationFound",
 
     components: {
         HomepageLayout,
-        UndrawPageNotFound,
+        UndrawWarning,
     },
 });
 </script>

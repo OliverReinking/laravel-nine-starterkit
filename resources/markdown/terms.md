@@ -1,3 +1,3 @@
-# Terms of Service
+# Nutzungsbedingungen
 
-Edit this file to define the terms of service for your application.
+Bearbeiten Sie diese Datei, um die Servicebedingungen für Ihre Anwendung festzulegen.

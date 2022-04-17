@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Laravel\Jetstream\Jetstream;
 use Illuminate\Support\Facades\Log;
 use App\Jobs\SendMailJobApplication;
 use Illuminate\Support\Facades\Redirect;
@@ -29,11 +31,21 @@ class HomeController extends Controller
     }
     public function home_imprint()
     {
-        return Inertia::render('Application/Homepage/Imprint');
+        $imprintFile = Jetstream::localizedMarkdownPath('imprint.md');
+        $imprint = Str::markdown(file_get_contents($imprintFile));
+        //
+        return Inertia::render('Application/Homepage/Imprint', [
+            'imprint' => $imprint,
+        ]);
     }
     public function home_privacy()
     {
-        return Inertia::render('Application/Homepage/Privacy');
+        $policyFile = Jetstream::localizedMarkdownPath('policy.md');
+        $policy = Str::markdown(file_get_contents($policyFile));
+        //
+        return Inertia::render('Application/Homepage/Privacy', [
+            'policy' => $policy,
+        ]);
     }
     public function home_job_application()
     {
