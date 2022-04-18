@@ -7,10 +7,10 @@
                         <h1
                             class="font-logo text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl"
                         >
-                            Unsere Mission
+                            Kontakt
                         </h1>
                         <div class="mt-2 text-gray-600 dark:text-gray-400">
-                            Die Welt offen und ehrlich informieren!
+                            Nehme gerne Kontakt mit uns auf!
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                 <div
                     class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2"
                 >
-                    <undraw-shared-goals class="w-full h-full lg:max-w-2xl"></undraw-shared-goals>
+                    <undraw-contact-us class="w-full h-full lg:max-w-2xl"></undraw-contact-us>
                 </div>
             </div>
         </div>
@@ -28,14 +28,14 @@
 import { defineComponent } from "vue";
 import HomepageLayout from "@/Pages/Application/Homepage/Shared/Layout";
 
-import UndrawSharedGoals from "@/Pages/Components/UnDraw/SharedGoals";
+import UndrawContactUs from "@/Pages/Components/UnDraw/ContactUs";
 
 export default defineComponent({
-    name: "Homepage_Mission",
+    name: "Homepage_Contact",
 
     components: {
         HomepageLayout,
-        UndrawSharedGoals
+        UndrawContactUs
     },
 });
 </script>
