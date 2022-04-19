@@ -3050,11 +3050,24 @@ select {
     background-color: transparent;
   }
 
+  .dark .dark\:md\:bg-transparent {
+    background-color: transparent;
+  }
+
   .dark .md\:dark\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
 
+  .dark .dark\:md\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
   .dark .md\:dark\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .dark .dark\:md\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
