@@ -2,7 +2,7 @@
     <button
         type="button"
         @click="changeMode"
-        class="block py-2 pr-4 pl-3 cursor-pointer whitespace-nowrap mt-2 text-gray-500 dark:text-gray-50 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-green-500 dark:hover:text-green-500 md:dark:hover:bg-transparent md:hover:bg-transparent md:p-0"
+        class="block py-2 pr-4 pl-3 cursor-pointer whitespace-nowrap mt-2 text-gray-500 dark:text-gray-50 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-green-500 dark:hover:text-green-500 dark:md:hover:bg-transparent md:hover:bg-transparent md:p-0"
     >
         <span v-if="mode == 'light'">
             <icon-night class="w-5 h-5"></icon-night>

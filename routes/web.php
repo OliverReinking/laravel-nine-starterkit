@@ -51,6 +51,14 @@ Route::middleware([
     Route::middleware(['is_admin'])->group(function () {
         // Dashboard
         Route::get('/admin/dashboard', [DashboardAdminController::class, 'admin_index'])->name('admin.dashboard');
+        // Liste der Anwender
+        Route::get('/admin/users', [DashboardAdminController::class, 'admin_index'])->name('admin.users');
+        // Übersicht Prozesse
+        Route::get('/admin/processes', [DashboardAdminController::class, 'admin_index'])->name('admin.processes');
+        // Übersicht Blog
+        Route::get('/admin/blog', [DashboardAdminController::class, 'admin_index'])->name('admin.blog');
+        // Übersicht Statistik
+        Route::get('/admin/statistics', [DashboardAdminController::class, 'admin_index'])->name('admin.statistics');
     });
 });
 

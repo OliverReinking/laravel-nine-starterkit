@@ -15,7 +15,7 @@
 import { Link } from "@inertiajs/inertia-vue3";
 
 export default {
-    name: "Homepage_NavLink",
+    name: "Admin_HeaderLink",
     //
     components: {
         Link,
