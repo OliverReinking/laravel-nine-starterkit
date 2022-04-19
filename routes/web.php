@@ -3,6 +3,8 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\DashboardAdminController;
 
 // --------
 // Homepage
@@ -25,6 +27,12 @@ Route::get('/job_application', [HomeController::class, 'home_job_application'])-
 // Bewerbungsformular Send
 Route::post('/job_application/send', [HomeController::class, 'home_job_application_send'])->name('home.job_application.send');
 
+// Anwender ist kein Administrator
+Route::get('/user_is_no_admin', [HomeController::class, 'user_is_no_admin'])->name('user_is_no_admin');
+
+// Anwendung konnte nicht gefunden werden
+Route::get('/no_application_found', [HomeController::class, 'no_application_found'])->name('no_application_found');
+
 // ------------------------------
 // Routen für angemeldete Anwender
 // -------------------------------
@@ -33,9 +41,17 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    // =================
+    // APPLICATIONSWITCH
+    // =================
+    Route::get('/applicationswitch', [ApplicationController::class, 'index'])->name('applicationswitch');
+    // =================
+    // APPLICATION ADMIN
+    // =================
+    Route::middleware(['is_admin'])->group(function () {
+        // Dashboard
+        Route::get('/admin/dashboard', [DashboardAdminController::class, 'admin_index'])->name('admin.dashboard');
+    });
 });
 
 // --------------
