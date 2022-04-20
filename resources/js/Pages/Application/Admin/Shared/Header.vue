@@ -12,7 +12,7 @@
         </div>
         <div class="flex items-center">
             <ul
-                class="flex flex-row items-center space-x-4 md:flex-row md:flex-nowrap md:space-x-8 md:text-sm md:font-medium"
+                class="flex flex-row items-center space-x-2 md:flex-row md:flex-nowrap md:text-sm md:font-medium"
             >
                 <li>
                     <button-change-mode
@@ -20,11 +20,22 @@
                         @changeMode="changeDarkLight"
                     ></button-change-mode>
                 </li>
-                <li class="hidden md:block">
-                    <header-link
-                        label="Dashboard"
-                        route-name="admin.dashboard"
-                    ></header-link>
+                <li v-if="$page.props.user.is_admin">
+                    <!-- Application Dropdown -->
+                    <dropdown align="right" width="96">
+                        <template #trigger>
+                            <dropdown-button
+                                label="Anwendung wechseln"
+                            ></dropdown-button>
+                        </template>
+
+                        <template #content>
+                            <!-- Application Management -->
+                            <div class="">
+                                Anwendung wechseln
+                            </div>
+                        </template>
+                    </dropdown>
                 </li>
             </ul>
         </div>
@@ -37,6 +48,9 @@ import HeaderLink from "@/Pages/Application/Admin/Shared/HeaderLink";
 import ButtonChangeMode from "@/Pages/Components/ButtonChangeMode";
 import IconMenu from "@/Pages/Components/Icons/Menu";
 
+import Dropdown from "@/Pages/Components/Dropdown.vue";
+import DropdownButton from "@/Pages/Components/DropdownButton.vue";
+
 export default defineComponent({
     name: "Admin_Header",
 
@@ -44,6 +58,8 @@ export default defineComponent({
         HeaderLink,
         ButtonChangeMode,
         IconMenu,
+        Dropdown,
+        DropdownButton,
     },
 
     props: {
@@ -60,7 +76,6 @@ export default defineComponent({
     emits: ["changeSidebarValue", "changeDarkLight"],
 
     setup(props, context) {
-
         function openSidebar() {
             console.log("Admin Header.vue openSidebar");
             context.emit("changeSidebarValue", true);
@@ -74,7 +89,7 @@ export default defineComponent({
         //
         return {
             openSidebar,
-            changeDarkLight
+            changeDarkLight,
         };
     },
 });
