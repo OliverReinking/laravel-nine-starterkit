@@ -1,6 +1,8 @@
 <template>
     <admin-layout>
-        adsfasdf
+        <div class="font-logo text-2xl text-extrabold">
+            Herzlich Willkommen im Dashboard!
+        </div>
     </admin-layout>
 </template>
 <script>
