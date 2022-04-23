@@ -3178,10 +3178,6 @@ select {
 }
 @media (min-width: 1024px) {
 
-  .lg\:invisible {
-    visibility: hidden;
-  }
-
   .lg\:static {
     position: static;
   }
