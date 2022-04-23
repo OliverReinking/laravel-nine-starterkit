@@ -53,11 +53,6 @@
                     route-name="admin.statistics"
                     label="Statistik"
                 ></sidebar-link>
-                <application-switch
-                    class="lg:hidden"
-                    :display-type="$page.props.navtype.nav_sidebar"
-                    :application-name="$page.props.applications.app_admin"
-                />
             </nav>
         </div>
     </div>
@@ -67,7 +62,6 @@
 import { defineComponent } from "vue";
 
 import SidebarLink from "@/Pages/Components/SidebarLink";
-import ApplicationSwitch from "@/Pages/Components/ApplicationSwitch.vue";
 
 import CompanyName from "@/Pages/Components/Content/CompanyName";
 
@@ -76,7 +70,6 @@ export default defineComponent({
 
     components: {
         SidebarLink,
-        ApplicationSwitch,
         CompanyName,
     },
 

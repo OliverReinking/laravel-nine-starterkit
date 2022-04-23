@@ -89,6 +89,14 @@ class HomeController extends Controller
     {
         return Inertia::render('Application/Homepage/UserIsNoAdmin');
     }
+    public function user_is_no_employee()
+    {
+        return Inertia::render('Application/Homepage/UserIsNoEmployee');
+    }
+    public function user_is_no_customer()
+    {
+        return Inertia::render('Application/Homepage/UserIsNoCustomer');
+    }
     public function no_application_found()
     {
         return Inertia::render('Application/Homepage/NoApplicationFound');

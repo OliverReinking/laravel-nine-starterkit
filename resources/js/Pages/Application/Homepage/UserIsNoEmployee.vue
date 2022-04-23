@@ -7,7 +7,7 @@
                         <h1
                             class="font-logo text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl"
                         >
-                            Sie sind kein Administrator
+                            Sie sind kein Mitarbeiter
                         </h1>
                         <div class="mt-2 text-gray-600 dark:text-gray-400">
                             <span
@@ -38,7 +38,7 @@ import HomepageLayout from "@/Pages/Application/Homepage/Shared/Layout";
 import UndrawNotify from "@/Pages/Components/UnDraw/Notify";
 
 export default defineComponent({
-    name: "Homepage_UserIsNoAdmin",
+    name: "Homepage_UserIsNoEmployee",
 
     components: {
         HomepageLayout,

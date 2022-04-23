@@ -1,11 +1,11 @@
 <template>
     <Link
         :href="route(routeName)"
-        class="flex items-center px-6 py-2 mt-2 transition duration-1000 transform"
+        class="flex items-center px-2 py-2 mt-2 transition duration-1000 transform"
         :class="[route().current(routeName) ? activeClass : inactiveClass]"
     >
-        <component v-bind:is="icon" class="w-5 h-5" />
-        <span class="mx-4">{{ label }}</span>
+        <component v-bind:is="icon" class="w-5 h-5 mr-2" />
+        <span class="text-sm mx-2">{{ label }}</span>
     </Link>
 </template>
 <script>
@@ -17,9 +17,10 @@ import IconChartPie from "@/Pages/Components/Icons/ChartPie";
 import IconCollection from "@/Pages/Components/Icons/Collection";
 import IconNewspaper from "@/Pages/Components/Icons/Newspaper";
 import IconUsers from "@/Pages/Components/Icons/Users";
+import IconViewGrid from "@/Pages/Components/Icons/ViewGrid";
 
 export default defineComponent({
-    name: "Admin_SidebarLink",
+    name: "Component_SidebarLink",
     //
     components: {
         Link,
@@ -28,6 +29,7 @@ export default defineComponent({
         IconCollection,
         IconNewspaper,
         IconUsers,
+        IconViewGrid
     },
 
     props: {

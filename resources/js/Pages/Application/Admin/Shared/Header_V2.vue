@@ -45,50 +45,11 @@
                     </template>
                 </dropdown>
             </div>
-            <div>
-                <dropdown align="right" width="96">
-                    <template #trigger>
-                        <dropdown-link
-                            v-if="$page.props.jetstream.managesProfilePhotos"
-                        >
-                            <img
-                                class="h-8 w-8 rounded-full object-cover"
-                                :src="$page.props.user.profile_photo_url"
-                                :alt="$page.props.user.name"
-                            />
-                        </dropdown-link>
-                        <dropdown-link v-else with-icon="true">
-                            {{ $page.props.user.name }}
-                        </dropdown-link>
-                    </template>
-
-                    <template #content>
-                        <!-- Account Management -->
-                        <div class="block px-4 py-2 text-xs text-gray-400">
-                            Meine Daten
-                        </div>
-
-                        <dropdown-link route-name="admin.profile" :with-route="true">
-                            Persönliche Einstellungen
-                        </dropdown-link>
-
-                        <div class="my-2 border-t border-gray-100"></div>
-
-                        <!-- Authentication -->
-                        <form @submit.prevent="logout">
-                            <dropdown-link>
-                                <button type="submit">Abmelden</button>
-                            </dropdown-link>
-                        </form>
-                    </template>
-                </dropdown>
-            </div>
         </div>
     </header>
 </template>
 <script>
 import { defineComponent } from "vue";
-import { Inertia } from "@inertiajs/inertia";
 
 import ButtonChangeMode from "@/Pages/Components/ButtonChangeMode";
 import IconMenu from "@/Pages/Components/Icons/Menu";
@@ -133,15 +94,9 @@ export default defineComponent({
             context.emit("changeDarkLight", value);
         }
         //
-        const logout = () => {
-            console.log("Header.vue logout");
-            Inertia.post(route("logout"));
-        };
-        //
         return {
             openSidebar,
             changeDarkLight,
-            logout,
         };
     },
 });
