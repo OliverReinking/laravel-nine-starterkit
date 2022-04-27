@@ -35,7 +35,7 @@
                 ></sidebar-link>
                 <sidebar-link
                     icon="icon-users"
-                    route-name="admin.users"
+                    route-name="admin.user.index"
                     label="Anwender"
                 ></sidebar-link>
                 <sidebar-link

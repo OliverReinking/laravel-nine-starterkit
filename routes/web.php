@@ -3,6 +3,7 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardCustomerController;
@@ -60,9 +61,21 @@ Route::middleware([
         // Dashboard
         Route::get('/admin/dashboard', [DashboardAdminController::class, 'admin_index'])
             ->name('admin.dashboard');
+        // -----
+        // Users
+        // -----
         // Liste der Anwender
-        Route::get('/admin/users', [DashboardAdminController::class, 'admin_index'])
-            ->name('admin.users');
+        Route::get('/admin/users/index', [UserController::class, 'admin_user_index'])
+            ->name('admin.user.index');
+        // Display der Anwender
+        Route::get('/admin/users/show/{appuser}', [UserController::class, 'admin_user_show'])
+            ->name('admin.user.show');
+        // Edit der Anwenderdaten
+        Route::get('/admin/users/{appuser}/edit', [UserController::class, 'admin_user_edit'])
+            ->name('admin.user.edit');
+        // ------
+        // Others
+        // ------
         // Übersicht Prozesse
         Route::get('/admin/processes', [DashboardAdminController::class, 'admin_index'])
             ->name('admin.processes');

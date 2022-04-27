@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "@fontsource/archivo-black": "^4.5.6",
-        "@fontsource/inter": "^4.5.7"
+        "@fontsource/inter": "^4.5.7",
+        "laravel-vue-i18n": "^1.4.2"
     }
 }

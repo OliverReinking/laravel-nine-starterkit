@@ -1,13 +1,17 @@
-require('./bootstrap');
+require("./bootstrap");
 
-import { createApp, h } from 'vue';
-import { createInertiaApp } from '@inertiajs/inertia-vue3';
-import { InertiaProgress } from '@inertiajs/progress';
+import { createApp, h } from "vue";
 
-import '@fontsource/archivo-black/index.css';
-import '@fontsource/inter/index.css';
+import { createInertiaApp } from "@inertiajs/inertia-vue3";
+import { InertiaProgress } from "@inertiajs/progress";
 
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
+import { i18nVue } from 'laravel-vue-i18n'
+
+import "@fontsource/archivo-black/index.css";
+import "@fontsource/inter/index.css";
+
+const appName =
+    window.document.getElementsByTagName("title")[0]?.innerText || "Laravel";
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -15,9 +19,12 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         return createApp({ render: () => h(app, props) })
             .use(plugin)
+            .use(i18nVue, {
+                resolve: (lang) => import(`../../lang/${lang}.json`),
+            })
             .mixin({ methods: { route } })
             .mount(el);
     },
 });
 
-InertiaProgress.init({ color: '#22C55E' });
+InertiaProgress.init({ color: "#22C55E" });

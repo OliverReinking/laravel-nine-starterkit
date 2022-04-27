@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(AdminSeeder::class);
+        $this->call(TestData::class);
     }
 }
 
@@ -34,5 +35,13 @@ class AdminSeeder extends Seeder
             'is_employee' => false,
             'is_customer' => true,
         ]);
+    }
+}
+class TestData extends Seeder
+{
+    public function run()
+    {
+        // Lege 1500 Anwender an
+        User::factory()->times(1500)->create();
     }
 }

@@ -17,6 +17,10 @@ module.exports = {
             colors: {
                 primary: "#22C55E",
                 "primary-dark": "#DCFCE7",
+                "primary-light": "#22C55E",
+                "on-primary": "#FFFFFF",
+                "on-primary-light": "#FFFFFF",
+                "on-primary-dark": "#000000",
             },
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],

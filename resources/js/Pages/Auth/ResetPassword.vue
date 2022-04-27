@@ -1,11 +1,11 @@
 <script setup>
-import { Head, useForm } from '@inertiajs/inertia-vue3';
-import JetAuthenticationCard from '@/Jetstream/AuthenticationCard.vue';
-import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue';
-import JetButton from '@/Jetstream/Button.vue';
-import JetInput from '@/Jetstream/Input.vue';
-import JetLabel from '@/Jetstream/Label.vue';
-import JetValidationErrors from '@/Jetstream/ValidationErrors.vue';
+import { Head, useForm } from "@inertiajs/inertia-vue3";
+import JetAuthenticationCard from "@/Jetstream/AuthenticationCard.vue";
+import JetAuthenticationCardLogo from "@/Jetstream/AuthenticationCardLogo.vue";
+import JetButton from "@/Jetstream/Button.vue";
+import JetInput from "@/Jetstream/Input.vue";
+import JetLabel from "@/Jetstream/Label.vue";
+import JetValidationErrors from "@/Jetstream/ValidationErrors.vue";
 
 const props = defineProps({
     email: String,
@@ -15,13 +15,13 @@ const props = defineProps({
 const form = useForm({
     token: props.token,
     email: props.email,
-    password: '',
-    password_confirmation: '',
+    password: "",
+    password_confirmation: "",
 });
 
 const submit = () => {
-    form.post(route('password.update'), {
-        onFinish: () => form.reset('password', 'password_confirmation'),
+    form.post(route("password.update"), {
+        onFinish: () => form.reset("password", "password_confirmation"),
     });
 };
 </script>
@@ -38,7 +38,7 @@ const submit = () => {
 
         <form @submit.prevent="submit">
             <div>
-                <JetLabel for="email" value="Email" />
+                <JetLabel for="email" :value="$t('Email')" />
                 <JetInput
                     id="email"
                     v-model="form.email"
@@ -50,7 +50,7 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <JetLabel for="password" value="Password" />
+                <JetLabel for="password" :value="$t('Password')" />
                 <JetInput
                     id="password"
                     v-model="form.password"
@@ -62,7 +62,10 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <JetLabel for="password_confirmation" value="Confirm Password" />
+                <JetLabel
+                    for="password_confirmation"
+                    :value="$t('Confirm Password')"
+                />
                 <JetInput
                     id="password_confirmation"
                     v-model="form.password_confirmation"
@@ -74,8 +77,11 @@ const submit = () => {
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <JetButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Reset Password
+                <JetButton
+                    :class="{ 'opacity-25': form.processing }"
+                    :disabled="form.processing"
+                >
+                    {{ $t("Reset Password") }}
                 </JetButton>
             </div>
         </form>

@@ -40,16 +40,16 @@ const updatePassword = () => {
 <template>
     <JetFormSection @submitted="updatePassword">
         <template #title>
-            Update Password
+            {{ $t('Update Password') }}
         </template>
 
         <template #description>
-            Ensure your account is using a long, random password to stay secure.
+            {{ $t('Ensure your account is using a long, random password to stay secure.') }}
         </template>
 
         <template #form>
             <div class="col-span-6 sm:col-span-4">
-                <JetLabel for="current_password" value="Current Password" />
+                <JetLabel for="current_password" :value="$t('Current Password')" />
                 <JetInput
                     id="current_password"
                     ref="currentPasswordInput"
@@ -62,7 +62,7 @@ const updatePassword = () => {
             </div>
 
             <div class="col-span-6 sm:col-span-4">
-                <JetLabel for="password" value="New Password" />
+                <JetLabel for="password" :value="$t('New Password')" />
                 <JetInput
                     id="password"
                     ref="passwordInput"
@@ -75,7 +75,7 @@ const updatePassword = () => {
             </div>
 
             <div class="col-span-6 sm:col-span-4">
-                <JetLabel for="password_confirmation" value="Confirm Password" />
+                <JetLabel for="password_confirmation" :value="$t('Confirm Password')" />
                 <JetInput
                     id="password_confirmation"
                     v-model="form.password_confirmation"
@@ -89,11 +89,11 @@ const updatePassword = () => {
 
         <template #actions>
             <JetActionMessage :on="form.recentlySuccessful" class="mr-3">
-                Saved.
+                {{ $t('Saved.') }}
             </JetActionMessage>
 
             <JetButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                Save
+                {{ $t('Save') }}
             </JetButton>
         </template>
     </JetFormSection>

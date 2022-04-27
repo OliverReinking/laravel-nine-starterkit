@@ -1,4 +1,8 @@
 {
+    "I agree to the Terms of Service and Privacy Policy:": "Ich akzeptiere die Nutzungsbedingungen und die Datenschutzerklärung:",
+    "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.":"Um die Aktivierung der Zwei-Faktor-Authentifizierung abzuschließen, scannen Sie den folgenden QR-Code mit der Authentifizierungsanwendung Ihres Telefons oder geben Sie den Einrichtungsschlüssel ein und geben Sie den generierten OTP-Code ein.",
+    "Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application or enter the setup key.":"Die Zwei-Faktor-Authentifizierung ist jetzt aktiviert. Scannen Sie den folgenden QR-Code mit der Authentifizierungsanwendung Ihres Telefons oder geben Sie den Einrichtungsschlüssel ein.",
+    "Setup Key": "Einrichtungsschlüssel",
     "Africa": "Afrika",
     "Asia": "Asien",
     "Australia/Oceania": "Australien/Ozeanien",
