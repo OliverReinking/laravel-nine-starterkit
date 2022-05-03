@@ -63,10 +63,10 @@ export default {
             transition
             active:bg-white
             dark:active:bg-gray-700
-            hover:bg-white hover:text-gray-900
-            dark:hover:bg-gray-700 dark:hover:text-gray-100
-            focus:bg-white focus:text-gray-900 focus:ountline-none
-            dark:focus:bg-gray-800 dark:focus:text-gray-100 dark:focus:ountline-none`;
+            hover:bg-gray-300 hover:text-gray-900
+            dark:hover:bg-gray-900 dark:hover:text-gray-100
+            focus:bg-gray-200 focus:text-gray-900 focus:ountline-none
+            dark:focus:bg-gray-900 dark:focus:text-gray-100 dark:focus:ountline-none`;
         });
 
         return {

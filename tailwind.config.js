@@ -14,13 +14,21 @@ module.exports = {
 
     theme: {
         extend: {
+            // https://tailwindcss.com/docs/customizing-colors
             colors: {
-                primary: "#22C55E",
-                "primary-dark": "#DCFCE7",
-                "primary-light": "#22C55E",
-                "on-primary": "#FFFFFF",
-                "on-primary-light": "#FFFFFF",
-                "on-primary-dark": "#000000",
+                sunprimary: "#22C55E",
+                "sunprimary-dark": "#15803D",
+                "sunprimary-light": "#86EFAC",
+                "on-sunprimary": "#1F2937",
+                "on-sunprimary-light": "#1F2937",
+                "on-sunprimary-dark": "#1F2937",
+                //
+                nightprimary: "#22C55E",
+                "nightprimary-dark": "#86EFAC",
+                "nightprimary-light": "#15803D",
+                "on-nightprimary": "#1F2937",
+                "on-nightprimary-light": "#1F2937",
+                "on-nightprimary-dark": "#1F2937",
             },
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],

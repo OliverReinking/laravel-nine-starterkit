@@ -11,6 +11,8 @@
 export default {
     name: "InputTextarea",
     //
+    emits: ["update:modelValue"],
+    //
     props: {
         name: {
             type: String,

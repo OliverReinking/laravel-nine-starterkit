@@ -1,6 +1,9 @@
 <template>
     <!-- Anzeige der Liste -->
     <div class="np-dl-outer-container">
+        <div v-if="title" class="np-dl-title">
+            {{ title }}
+        </div>
         <div class="mb-4" v-if="searchFilter">
             <div class="my-6 flex justify-between items-center">
                 <search-filter
@@ -71,6 +74,10 @@ export default {
     },
     //
     props: {
+        title: {
+            type: String,
+            required: false,
+        },
         datarows: {
             type: [Object, Array],
             default: () => [],
@@ -79,13 +86,13 @@ export default {
             type: String,
             default: "Es wurden keine Datensätze gefunden.",
         },
-        routeIndex: {
-            type: String,
-            required: true,
-        },
         filters: {
             type: [Object, Array],
             default: () => [],
+        },
+        routeIndex: {
+            type: String,
+            required: true,
         },
         searchFilter: {
             type: Boolean,

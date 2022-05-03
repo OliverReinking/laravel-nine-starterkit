@@ -1,13 +1,13 @@
 <template>
     <div>
         <div
-            class="flex items-center justify-between bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md"
+            class="flex flex-col md:flex-row items-center justify-center md:items-center md:justify-between bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-md"
         >
-            <div class="flex-1 p-1 flex justify-start items-center">
+            <div class="w-full md:flex-1 p-1 flex justify-start items-center">
                 <div>
-                    <icon-search class="hidden sm:block mx-2 w-5" />
+                    <icon-search class="block mx-2 w-5" />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 w-full">
                     <input
                         type="text"
                         class="w-full border-none px-4 pt-2 pb-1 bg-transparent focus:bg-gray-300 dark:focus:bg-gray-600 focus:outline-none"
@@ -19,10 +19,10 @@
                     />
                 </div>
             </div>
-            <div class="p-1">
-                <div>
+            <div class="flex items-center justify-end md:items-end md:w-1/4">
+                <div class="p-2">
                     <button
-                        class="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-white dark:text-gray-900 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 dark:hover:bg-gray-400 dark:active:bg-gray-400 dark:focus:outline-none dark:focus:border-gray-400 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
+                        class="inline-block px-4 py-2 bg-gray-800 dark:bg-white dark:text-gray-900 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 dark:hover:bg-gray-400 dark:active:bg-gray-400 dark:focus:outline-none dark:focus:border-gray-400 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
                         @click.prevent="$emit('reset')"
                     >
                         Suche zurücksetzen
@@ -47,6 +47,8 @@ import IconSearch from "@/Pages/Components/Icons/Search";
 //
 export default {
     name: "SearchFilter",
+    //
+    emits: ["update:modelValue", "reset"],
     //
     components: {
         IconChevronDown,

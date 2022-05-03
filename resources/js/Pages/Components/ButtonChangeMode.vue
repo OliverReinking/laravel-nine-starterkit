@@ -2,14 +2,14 @@
     <button
         type="button"
         @click="changeMode"
-        class="inline-flex py-2 px-3 cursor-pointer whitespace-nowrap text-gray-500 dark:text-gray-50 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-green-500 dark:hover:text-green-500 dark:md:hover:bg-transparent md:hover:bg-transparent"
+        class="w-full block py-2 px-3 cursor-pointer whitespace-nowrap text-gray-500 dark:text-gray-50 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-green-500 dark:hover:text-green-500 dark:md:hover:bg-transparent md:hover:bg-transparent"
     >
-        <span v-if="mode == 'light'">
+        <div v-if="mode == 'light'">
             <icon-night class="w-5 h-5"></icon-night>
-        </span>
-        <span v-else>
+        </div>
+        <div v-else>
             <icon-sun class="w-5 h-5"></icon-sun>
-        </span>
+        </div>
     </button>
 </template>
 <script>

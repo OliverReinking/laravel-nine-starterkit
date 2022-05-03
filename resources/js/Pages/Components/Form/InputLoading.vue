@@ -1,7 +1,7 @@
 <template>
     <div
         v-if="loading"
-        class="p-4 mb-4 text-sm text-gray-700 dark:text-gray-200 bg-blue-100 dark:bg-blue-600 rounded-lg ease-in-out duration-1000"
+        class="p-4 mt-2 mb-4 text-sm text-gray-700 dark:text-gray-200 bg-blue-100 dark:bg-blue-600 rounded-lg ease-in-out duration-1000"
         role="alert"
     >
         <div class="flex items-center">

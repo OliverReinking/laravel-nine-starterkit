@@ -18,6 +18,7 @@ import IconCollection from "@/Pages/Components/Icons/Collection";
 import IconNewspaper from "@/Pages/Components/Icons/Newspaper";
 import IconUsers from "@/Pages/Components/Icons/Users";
 import IconViewGrid from "@/Pages/Components/Icons/ViewGrid";
+import IconDocumentText from "@/Pages/Components/Icons/DocumentText";
 
 export default defineComponent({
     name: "Component_SidebarLink",
@@ -29,7 +30,8 @@ export default defineComponent({
         IconCollection,
         IconNewspaper,
         IconUsers,
-        IconViewGrid
+        IconViewGrid,
+        IconDocumentText
     },
 
     props: {
@@ -49,10 +51,10 @@ export default defineComponent({
 
     setup(props) {
         const activeClass = ref(
-            "bg-gray-500 dark:bg-gray-600 text-gray-200 dark:text-gray-200 border-l-4 border-green-500"
+            "bg-gray-400 dark:bg-gray-900 border-l-4 border-green-500"
         );
         const inactiveClass = ref(
-            "bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-white border-l-4 border-transparent hover:bg-gray-500 dark:hover:bg-gray-500 hover:text-white dark:hover:text-white hover:border-green-500"
+            "bg-gray-300 dark:bg-gray-900 border-l-4 border-transparent hover:bg-gray-400 dark:hover:bg-gray-500 hover:text-gray-900 dark:hover:text-white hover:border-green-500"
         );
 
         return {

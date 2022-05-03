@@ -5,11 +5,11 @@
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
                         <h1
-                            class="font-logo text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl"
+                            class="font-logo text-2xl font-semibold uppercase lg:text-3xl"
                         >
                             Kontakt
                         </h1>
-                        <div class="mt-2 text-gray-600 dark:text-gray-400">
+                        <div class="mt-2">
                             Nehme gerne Kontakt mit uns auf!
                         </div>
                     </div>

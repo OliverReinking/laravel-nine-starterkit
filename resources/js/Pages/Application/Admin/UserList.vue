@@ -1,14 +1,17 @@
 <template>
     <admin-layout>
-        <div class="mt-4 font-logo text-2xl text-extrabold">
-            Liste der Anwender
-        </div>
+        <breadcrumb
+            :application-name="$page.props.applications.app_admin"
+            current="Liste"
+       ></breadcrumb>
 
         <!-- Anzeige der Anwenderlisteliste -->
-        <section class="mt-8">
+        <section class="mt-4">
             <list-container
+                title="Liste der Anwender"
                 route-index="admin.user.index"
                 :datarows="users"
+                :filters="filters"
                 :search-filter="true"
                 search-text="Gesucht werden alle Anwender, die den Suchbegriff im Namen bzw. in der Mailadresse enthalten."
                 :show-on="true"
@@ -48,7 +51,7 @@
                             :value="data.datarow.is_customer"
                         ></display-yes-or-no>
                     </td>
-                    <td class="np-dl-td-edit">
+                    <td class="np-dl-td-normal">
                         <display-date
                             :value="data.datarow.last_login_at"
                             :time-on="true"
@@ -63,6 +66,7 @@
 import { defineComponent } from "vue";
 
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout";
+import Breadcrumb from "@/Pages/Components/Breadcrumb";
 
 import ListContainer from "@/Pages/Components/Lists/ListContainer";
 import DisplayDate from "@/Pages/Components/Content/DisplayDate";
@@ -73,6 +77,7 @@ export default defineComponent({
 
     components: {
         AdminLayout,
+        Breadcrumb,
         ListContainer,
         DisplayDate,
         DisplayYesOrNo,
@@ -80,6 +85,10 @@ export default defineComponent({
 
     props: {
         users: {
+            type: Object,
+            default: () => ({}),
+        },
+        filters: {
             type: Object,
             default: () => ({}),
         },

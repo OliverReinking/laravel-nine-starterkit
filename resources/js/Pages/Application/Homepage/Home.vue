@@ -7,20 +7,20 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
                         <h2
-                            class="font-logo text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl sm:leading-none"
+                            class="font-logo text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none"
                         >
                             "Man erkennt den
                             <br class="hidden md:block" />Irrtum daran, dass
                             <br class="hidden md:block" />alle Welt ihn
                             teilt."<br class="hidden md:block" />
                             <span
-                                class="mt-4 text-xl inline-block text-green-400"
+                                class="mt-4 text-xl inline-block text-primary"
                                 >Jean Giraudoux</span
                             >
                         </h2>
                     </div>
                     <div class="lg:w-1/2">
-                        <p class="mb-4 text-base text-gray-700 dark:text-white">
+                        <p class="mb-4 text-base">
                             Nur mit verantwortungsvoll agierenden Medien
                             funktionieren Demokratien. Und nur mit
                             verantwortungsvoll agierenden Journalisten und
@@ -47,7 +47,7 @@
             >
                 <div>
                     <p
-                        class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-900 uppercase rounded-full bg-green-400"
+                        class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase rounded-full bg-green-400 text-gray-900 "
                     >
                         Jetzt bewerben!
                     </p>
@@ -82,7 +82,7 @@
                     </span>
                     kann abdanken, wenn er harmlos wird.
                 </h2>
-                <p class="text-base text-gray-700 dark:text-white md:text-lg">
+                <p class="text-base md:text-lg">
                     sagte Willy Brandt. Bewirb dich jetzt, damit Journalismus
                     nicht harmlos wird.
                 </p>
@@ -97,11 +97,11 @@
                         class="h-full p-5 border border-l-0 rounded-r shadow-sm"
                     >
                         <h6
-                            class="mb-2 text-gray-900 dark:text-white font-semibold leading-5"
+                            class="mb-2 font-semibold leading-5"
                         >
                             Matthew Arnold
                         </h6>
-                        <p class="text-sm text-gray-900 dark:text-white">
+                        <p class="text-sm">
                             Journalismus ist Literatur in Eile
                         </p>
                     </div>
@@ -113,11 +113,11 @@
                         class="h-full p-5 border border-l-0 rounded-r shadow-sm"
                     >
                         <h6
-                            class="mb-2 text-gray-900 dark:text-white font-semibold leading-5"
+                            class="mb-2 font-semibold leading-5"
                         >
                             Werner Mitsch
                         </h6>
-                        <p class="text-sm text-gray-900 dark:text-white">
+                        <p class="text-sm">
                             Journalismus ist der Pegasus mit der Deichsel.
                         </p>
                     </div>
@@ -129,11 +129,11 @@
                         class="h-full p-5 border border-l-0 rounded-r shadow-sm"
                     >
                         <h6
-                            class="mb-2 text-gray-900 dark:text-white font-semibold leading-5"
+                            class="mb-2 font-semibold leading-5"
                         >
                             Oscar Wilde
                         </h6>
-                        <p class="text-sm text-gray-900 dark:text-white">
+                        <p class="text-sm">
                             Journalismus ist unlesbar, und Literatur wird nicht
                             gelesen.
                         </p>
@@ -146,11 +146,11 @@
                         class="h-full p-5 border border-l-0 rounded-r shadow-sm"
                     >
                         <h6
-                            class="mb-2 text-gray-900 dark:text-white font-semibold leading-5"
+                            class="mb-2 font-semibold leading-5"
                         >
                             Roebert Hochner
                         </h6>
-                        <p class="text-sm text-gray-900 dark:text-white">
+                        <p class="text-sm">
                             Journalismus ist, wie ich zu sagen pflege, ein
                             Charakterdefekt, mit dem man Geld verdienen kann.
                         </p>

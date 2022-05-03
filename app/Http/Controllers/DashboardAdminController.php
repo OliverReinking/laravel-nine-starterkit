@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Laravel\Jetstream\Jetstream;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\ApplicationController;
 
@@ -27,6 +29,16 @@ class DashboardAdminController extends Controller
     {
         return Inertia::render('Application/Admin/Profile', [
             'sessions' => ApplicationController::sessions($request)->all(),
+        ]);
+    }
+    //
+    public function admin_documentation(Request $request)
+    {
+        $documentationFile = Jetstream::localizedMarkdownPath('documentation.md');
+        $documentation = Str::markdown(file_get_contents($documentationFile ));
+        //
+        return Inertia::render('Application/Admin/Documentation', [
+            'documentation' => $documentation,
         ]);
     }
 }

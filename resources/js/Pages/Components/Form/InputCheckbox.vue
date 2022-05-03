@@ -12,7 +12,7 @@
         <div class="ml-3 text-sm">
             <label
                 :for="name"
-                class="font-medium text-gray-900 dark:text-gray-300"
+                class="font-medium text-gray-700 dark:text-gray-300"
             >
                 <span v-if="label">{{ label }}</span>
                 <span v-else><slot></slot> </span>

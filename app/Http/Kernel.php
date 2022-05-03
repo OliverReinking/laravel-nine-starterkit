@@ -68,5 +68,7 @@ class Kernel extends HttpKernel
         'is_admin' => \App\Http\Middleware\UserIsAdmin::class,
         'is_employee' => \App\Http\Middleware\UserIsEmployee::class,
         'is_customer' => \App\Http\Middleware\UserIsCustomer::class,
+        //
+        'remember' => \Reinink\RememberQueryStrings::class,
     ];
 }

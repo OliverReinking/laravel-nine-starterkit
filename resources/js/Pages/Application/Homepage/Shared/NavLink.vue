@@ -1,7 +1,7 @@
 <template>
     <Link
         :href="route(routeName)"
-        class="block py-2 pr-4 pl-3 cursor-pointer whitespace-nowrap mt-2"
+        class="block py-2 px-4 cursor-pointer whitespace-nowrap"
         :class="[
             route().current(routeName)
                 ? 'text-green-500 dark:text-green-500 bg-green-200 dark:bg-gray-700 rounded md:bg-transparent dark:md:bg-transparent md:p-0'

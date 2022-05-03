@@ -8,11 +8,11 @@
         </div>
         <div>
             <p
-                class="mb-2 text-sm font-medium text-gray-800 dark:text-gray-200"
+                class="mb-2 text-sm font-medium"
             >
                 {{ label }}
             </p>
-            <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">
+            <p class="text-lg font-semibold">
                 <span v-if="valueType == 'number'">
                     <display-number
                         :value="value"

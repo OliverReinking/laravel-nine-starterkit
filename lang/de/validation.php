@@ -138,6 +138,7 @@ return [
     ],
 
     'attributes' => [
+        'name' => 'Name',
         'first_name' => 'Vorname',
         'last_name' => 'Nachname',
         'email' => 'Mailadresse',

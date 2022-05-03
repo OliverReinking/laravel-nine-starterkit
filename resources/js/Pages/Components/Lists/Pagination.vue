@@ -6,16 +6,16 @@
             <div
                 v-if="link.url === null"
                 :key="key"
-                class="flex items-center px-4 py-1 md:py-2 mx-1 mb-1 rounded-md cursor-not-allowed"
+                class="flex items-center px-3 py-1 md:py-1 mx-1 mb-1 rounded-md cursor-not-allowed"
             >
                 <span v-html="link.label"></span>
             </div>
             <Link
                 v-if="link.url !== null"
                 :key="key"
-                class="flex items-center px-4 py-1 md:py-2 mx-1 mb-1 transition-colors duration-200 transform rounded-md hover:bg-gray-200 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-gray-100 "
+                class="flex items-center px-3 py-1 md:py-1 mx-1 mb-1 transition-colors duration-200 transform rounded-md hover:bg-gray-200 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-gray-100 "
                 :class="{
-                    'bg-primary text-on-primary': link.active,
+                    'bg-sunprimary text-on-sunprimary dark:bg-nightprimary dark:text-on-nightprimary': link.active,
                 }"
                 :href="link.url"
             >

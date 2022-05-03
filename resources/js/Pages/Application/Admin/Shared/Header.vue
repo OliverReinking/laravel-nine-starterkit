@@ -1,11 +1,11 @@
 <template>
     <header
-        class="flex items-center justify-between px-6 py-4 transition duration-1000 transform bg-gray-100 dark:bg-gray-900 border-b-2 border-gray-200 dark:border-gray-600"
+        class="flex items-center justify-between px-6 py-4 transition duration-1000 transform bg-gray-200 dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-600"
     >
         <div class="flex items-center">
             <button
                 @click="openSidebar"
-                class="text-gray-500 dark:text-white focus:outline-none lg:hidden"
+                class="focus:outline-none lg:hidden"
             >
                 <icon-menu class="w-5 h-5 mt-2"></icon-menu>
             </button>
@@ -35,7 +35,7 @@
 
                     <template #content>
                         <!-- Application Management -->
-                        <div class="block px-4 py-2 text-xs text-gray-400">
+                        <div class="block px-4 py-2 text-xs">
                             Anwendung wechseln
                         </div>
                         <application-switch
@@ -105,7 +105,7 @@ export default defineComponent({
         IconMenu,
         ApplicationSwitch,
         Dropdown,
-        DropdownLink,
+        DropdownLink
     },
 
     props: {

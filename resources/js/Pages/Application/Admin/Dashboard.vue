@@ -3,7 +3,7 @@
         <div class="mt-4 font-logo text-2xl text-extrabold">
             Herzlich Willkommen im Dashboard für Administratoren!
         </div>
-        <div class="mt-8 grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+        <div class="mt-8 grid gap-6 mb-8 md:grid-cols-2 2xl:grid-cols-4 items-stretch">
             <statistic-value
                 :with-link="false"
                 :with-icon="true"

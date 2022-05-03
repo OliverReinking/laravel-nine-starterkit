@@ -1,6 +1,6 @@
 @layer utilities {
     .np-dl-outer-container {
-        @apply p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-xl;
+        @apply p-4 bg-white dark:bg-gray-800 rounded shadow-xl;
     }
 
     .np-dl-data-container {
@@ -8,11 +8,23 @@
     }
 
     .np-dl-title {
-        @apply px-2 mt-8 mb-4 text-3xl font-bold font-sans;
+        @apply px-2 mt-2 mb-4 text-xl font-bold font-logo;
+    }
+
+    @screen md {
+        .np-dl-title {
+            @apply text-3xl;
+       }
     }
 
     .np-dl-table {
-        @apply w-full text-sm overflow-y-auto;
+        @apply w-full text-xs overflow-y-auto;
+    }
+
+    @screen md {
+        .np-dl-table {
+            @apply text-sm;
+       }
     }
 
     .np-dl-thead {
@@ -32,11 +44,11 @@
     }
 
     .np-dl-tr:hover {
-        @apply bg-primary-light text-on-primary-light dark:bg-primary-dark dark:text-on-primary-dark;
+        @apply bg-sunprimary-light text-on-sunprimary-light dark:bg-nightprimary-light dark:text-on-nightprimary-light;
     }
 
     .np-dl-tr:hover:focus-within {
-        @apply text-on-primary-light dark:text-on-primary-dark;
+        @apply text-on-sunprimary-light dark:text-on-nightprimary-light;
     }
 
     .np-dl-td-normal {
@@ -48,7 +60,7 @@
     }
 
     .np-dl-td-edit {
-        @apply align-middle border-t border-gray-200 dark:border-gray-900 w-px pr-3 cursor-pointer hover:text-white dark:hover:text-black;
+        @apply align-middle border-t border-gray-200 dark:border-gray-900 w-px px-4 cursor-pointer;
     }
 
     .np-dl-td--small {

@@ -20,7 +20,7 @@ export default {
         },
         valueUnitClass: {
             type: String,
-            default: "text-xs font-medium text-gray-800 dark:text-gray-200"
+            default: "text-xs font-medium text-gray-500 dark:text-gray-400"
         }
     },
     //

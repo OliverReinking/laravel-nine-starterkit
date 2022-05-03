@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="h-20">
         <div
             v-if="withLink"
-            class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-gray-100 dark:bg-gray-800"
+            class="h-full min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800"
         >
             <Link
                 :href="route(routeName)"
@@ -25,7 +25,7 @@
         </div>
         <div
             v-else
-            class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-gray-100 dark:bg-gray-800"
+            class="h-full min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800"
         >
             <statistic-value-content
                 :with-icon="withIcon"
@@ -99,7 +99,7 @@ export default {
         },
         valueUnitClass: {
             type: String,
-            default: "text-xs",
+            default: "text-xs font-medium text-gray-500 dark:text-gray-400"
         },
     },
 };

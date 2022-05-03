@@ -66,13 +66,19 @@ Route::middleware([
         // -----
         // Liste der Anwender
         Route::get('/admin/users/index', [UserController::class, 'admin_user_index'])
-            ->name('admin.user.index');
+            ->name('admin.user.index')->middleware('remember');
         // Display der Anwender
         Route::get('/admin/users/show/{appuser}', [UserController::class, 'admin_user_show'])
             ->name('admin.user.show');
         // Edit der Anwenderdaten
         Route::get('/admin/users/{appuser}/edit', [UserController::class, 'admin_user_edit'])
             ->name('admin.user.edit');
+        // Update der Anwenderdaten
+        Route::put('/admin/users/{appuser}', [UserController::class, 'admin_user_update'])
+            ->name('admin.user.update');
+        // User Delete
+        Route::delete('/admin/users/{appuser}', [UserController::class, 'admin_user_delete'])
+            ->name('admin.user.delete');
         // ------
         // Others
         // ------
@@ -85,6 +91,9 @@ Route::middleware([
         // Übersicht Statistik
         Route::get('/admin/statistics', [DashboardAdminController::class, 'admin_index'])
             ->name('admin.statistics');
+        // Übersicht Dokumentation
+        Route::get('/admin/documentation', [DashboardAdminController::class, 'admin_documentation'])
+            ->name('admin.documentation');
         // =======
         // Profile
         // =======
