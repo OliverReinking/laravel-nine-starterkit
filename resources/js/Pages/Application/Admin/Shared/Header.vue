@@ -123,18 +123,15 @@ export default defineComponent({
 
     setup(props, context) {
         function openSidebar() {
-            console.log("Admin Header.vue openSidebar");
             context.emit("changeSidebarValue", true);
         }
         //
         function changeDarkLight(value) {
-            console.log("Admin Header.vue changeDarkLight:", value);
             localStorage.theme = value;
             context.emit("changeDarkLight", value);
         }
         //
         const logout = () => {
-            console.log("Header.vue logout");
             Inertia.post(route("logout"));
         };
         //

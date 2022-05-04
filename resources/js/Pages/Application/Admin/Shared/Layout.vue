@@ -50,12 +50,10 @@ export default defineComponent({
         }
         //
         function changeSidebarOpen(newValue) {
-            console.log("Admin Layout.vue changeSidebarOpen:", newValue);
             isSidebarOpen.value = newValue;
         }
         //
         function changeMode(newValue) {
-            console.log("Admin Layout.vue changeMode:", newValue);
             mode.value = newValue;
             //
             localStorage.theme = mode.value;

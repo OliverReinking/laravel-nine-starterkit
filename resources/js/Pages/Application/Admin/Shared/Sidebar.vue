@@ -59,6 +59,10 @@
                     label="Dokumentation"
                 ></sidebar-link>
                 <application-switch
+                    v-if="
+                        $page.props.user.is_employee ||
+                        $page.props.user.is_customer
+                    "
                     class="lg:hidden"
                     :display-type="$page.props.navtype.nav_sidebar"
                     :application-name="$page.props.applications.app_admin"
