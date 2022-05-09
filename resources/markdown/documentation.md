@@ -13,9 +13,9 @@ Verzeichnis: resources/js/Pages/Components
 
     props:
     - displayType
-    - { header, sidebar }
+      - { header, sidebar }
     - applicationName
-    - { admin, employee, customer }
+      - { admin, employee, customer }
 
 </details>
 
@@ -26,11 +26,13 @@ Verzeichnis: resources/js/Pages/Components
     - home
       - default: "Dashboard"
     - applicationName
-    - { admin, employee, customer }
+      - { admin, employee, customer }
     - current
-    - Name der aktuellen Position
+      - Name der aktuellen Position
     - breadcrumbs
-    - Liste der Navigationspunkte
+      - Liste der Navigationspunkte
+    - startPage
+      - { true, false }
 
     Beispiel:
     ```js
@@ -51,7 +53,7 @@ Verzeichnis: resources/js/Pages/Components
 
     props:
     - mode
-    - { light, dark}
+      - { light, dark}
 
     events:
     - changeMode
@@ -66,11 +68,11 @@ Verzeichnis: resources/js/Pages/Components
 
     props:
     - show
-    - { true, false }
+      - { true, false }
     - maxWidth
-    - { sm, md, lg, xl, 2xl } 
+      - { sm, md, lg, xl, 2xl } 
     - closeable
-    - { true, false }
+      - { true, false }
 
     events:
     - close
@@ -81,11 +83,11 @@ Verzeichnis: resources/js/Pages/Components
 
     props:
     - align
-    - { left, right }
+      - { left, right }
     - width
-    - { 48, 64, 96}
+      - { 48, 64, 96}
     - autoClose
-    - { true, false }
+      - { true, false }
     - contentClasses
 </details>
 
@@ -96,9 +98,9 @@ Verzeichnis: resources/js/Pages/Components
     - routeName
     - Name der Route
     - withIcon
-    - { true, false }
+      - { true, false }
     - withRoute
-    - { true, false }
+      - { true, false }
 
 </details>
 
@@ -107,11 +109,11 @@ Verzeichnis: resources/js/Pages/Components
 
     props:
     - show
-    - { true, false }
+      - { true, false }
     - maxWidth
-    - { sm, md, lg, xl, 2xl } 
+      - { sm, md, lg, xl, 2xl } 
     - closeable
-    - { true, false }
+      - { true, false }
     
     events:
     - close
@@ -153,11 +155,11 @@ Verzeichnis: resources/js/Pages/Components/Content
     props:
     - classes
     - withFavicon
-    - { true, false }
+      - { true, false }
     - withSlogan
-    - { true, false }
+      - { true, false }
     - withLink
-    - { true, false }
+      - { true, false }
     - routeName
     - Name der Route
 
@@ -181,7 +183,7 @@ Verzeichnis: resources/js/Pages/Components/Content
     - afterDigits
     - Anzahl der Nachkommastellen
     - valueUnit
-    - zum Beispiel: Euro
+      - zum Beispiel: Euro
     - valueUnitClass
 
 </details>
@@ -241,7 +243,7 @@ Verzeichnis: resources/js/Pages/Components/Content
 
     props:
     - loading
-    - { true, false }
+      - { true, false }
 
 </details>
 
@@ -266,22 +268,23 @@ Verzeichnis: resources/js/Pages/Components/Content
 <details>
     <summary>StatisticValueContent.vue</summary>
 
-        components:
-        - DisplayNumber
-        - DisplayDate
+    components:
+    - DisplayNumber
+    - DisplayDate
 
-        props:
-        - withIcon
-        - icon
-        - color
-        - withLink
-        - routeName
-        - label
-        - valueType
-        - value
-        - afterDigits
-        - valueUnit
-        - valueUnitClass
+    props:
+    - withIcon
+    - icon
+    - color
+    - withLink
+    - routeName
+    - label
+    - valueType
+    - value
+    - afterDigits
+    - valueUnit
+    - valueUnitClass
+  
 </details>
 
 

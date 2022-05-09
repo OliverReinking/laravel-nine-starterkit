@@ -1,8 +1,15 @@
 <template>
     <admin-layout>
-        <div class="mt-4 font-logo text-2xl text-extrabold">
+
+        <breadcrumb
+            :application-name="$page.props.applications.app_admin"
+            :start-page="true"
+        ></breadcrumb>
+
+        <page-title>
             Herzlich Willkommen im Dashboard für Administratoren!
-        </div>
+        </page-title>
+
         <div class="mt-8 grid gap-6 mb-8 md:grid-cols-2 2xl:grid-cols-4 items-stretch">
             <statistic-value
                 :with-link="false"
@@ -51,6 +58,10 @@
 import { defineComponent } from "vue";
 
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout";
+import Breadcrumb from "@/Pages/Components/Breadcrumb";
+
+import PageTitle from "@/Pages/Components/Content/PageTitle";
+
 import StatisticValue from "@/Pages/Components/Content/StatisticValue";
 
 export default defineComponent({
@@ -58,6 +69,8 @@ export default defineComponent({
 
     components: {
         AdminLayout,
+        Breadcrumb,
+        PageTitle,
         StatisticValue,
     },
 

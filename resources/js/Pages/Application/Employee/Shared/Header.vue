@@ -5,7 +5,7 @@
         <div class="flex items-center">
             <button
                 @click="openSidebar"
-                class="focus:outline-none lg:hidden"
+                class="focus:outline-none"
             >
                 <icon-menu class="w-5 h-5 mt-2"></icon-menu>
             </button>
@@ -21,7 +21,7 @@
             </div>
             <div
                 v-if="
-                    $page.props.user.is_employee || $page.props.user.is_customer
+                    $page.props.user.is_admin || $page.props.user.is_customer
                 "
                 class="hidden lg:block"
             >
@@ -40,7 +40,7 @@
                         </div>
                         <application-switch
                             :display-type="$page.props.navtype.nav_header"
-                            :application-name="$page.props.applications.app_admin"
+                            :application-name="$page.props.applications.app_employee"
                         />
                     </template>
                 </dropdown>
@@ -57,7 +57,7 @@
                                 :alt="$page.props.user.name"
                             />
                         </dropdown-link>
-                        <dropdown-link v-else :with-icon="true">
+                        <dropdown-link v-else with-icon="true">
                             {{ $page.props.user.name }}
                         </dropdown-link>
                     </template>
@@ -98,7 +98,7 @@ import Dropdown from "@/Pages/Components/Dropdown.vue";
 import DropdownLink from "@/Pages/Components/DropdownLink.vue";
 
 export default defineComponent({
-    name: "Admin_Header",
+    name: "Employee_Header",
 
     components: {
         ButtonChangeMode,

@@ -3,19 +3,21 @@
         <div
             class="relative flex h-screen bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-100"
         >
-            <admin-sidebar
+            <employee-sidebar
                 :is-sidebar-open="isSidebarOpen"
                 @changeSidebarValue="changeSidebarOpen"
-            ></admin-sidebar>
-            <div class="flex-1 flex flex-col overflow-hidden z-30">
-                <admin-header
+            ></employee-sidebar>
+            <div class="flex-1 flex flex-col overflow-hidden">
+                <employee-header
                     :mode="mode"
                     :is-sidebar-open="isSidebarOpen"
                     @changeSidebarValue="changeSidebarOpen"
                     @changeDarkLight="changeMode"
-                ></admin-header>
+                ></employee-header>
                 <main class="flex-1 overflow-x-hidden overflow-y-auto">
-                    <div class="container px-6 py-8">
+                    <div
+                        class="container mx-auto w-full md:max-w-5xl px-2 py-4 md:px-6 md:py-8"
+                    >
                         <toast class="mb-6"></toast>
                         <slot />
                     </div>
@@ -28,7 +30,7 @@
                             Version: {{ $page.props.version.versionnr }} vom
                             {{ $page.props.version.versionsdatum }}
                             <br />
-                            {{ $page.props.applications.app_admin_name }}
+                            {{ $page.props.applications.app_employee_name }}
                         </div>
                     </div>
                 </main>
@@ -39,17 +41,17 @@
 <script>
 import { defineComponent, ref } from "vue";
 
-import AdminSidebar from "@/Pages/Application/Admin/Shared/Sidebar";
-import AdminHeader from "@/Pages/Application/Admin/Shared/Header";
+import EmployeeSidebar from "@/Pages/Application/Employee/Shared/Sidebar";
+import EmployeeHeader from "@/Pages/Application/Employee/Shared/Header";
 
 import Toast from "@/Pages/Components/Content/Toast";
 
 export default defineComponent({
-    name: "Admin_Layout",
+    name: "Employee_Layout",
 
     components: {
-        AdminSidebar,
-        AdminHeader,
+        EmployeeSidebar,
+        EmployeeHeader,
         Toast,
     },
 

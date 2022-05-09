@@ -9,9 +9,9 @@
             }"
         ></breadcrumb>
 
-        <div class="mt-4 mb-8 font-logo text-2xl text-extrabold">
+        <page-title>
             Anzeige Anwender
-        </div>
+        </page-title>
 
         <section-content>
             <template #title>Anwenderdaten</template>
@@ -80,6 +80,8 @@ import { defineComponent } from "vue";
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout";
 import Breadcrumb from "@/Pages/Components/Breadcrumb";
 
+import PageTitle from "@/Pages/Components/Content/PageTitle";
+
 import SectionContent from "@/Pages/Components/Content/SectionContent";
 import SectionBorder from "@/Pages/Components/Content/SectionBorder";
 
@@ -93,6 +95,7 @@ export default defineComponent({
     components: {
         AdminLayout,
         Breadcrumb,
+        PageTitle,
         SectionContent,
         SectionBorder,
         DisplayRow,

@@ -4,14 +4,26 @@
         aria-label="Breadcrumb"
     >
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
+            <li v-if="!startPage">
                 <Link
                     :href="route(routeDashboard)"
-                    class="inline-flex items-center text-sm font-medium hover:text-gray-900 dark:hover:text-white"
+                    class="flex items-center hover:text-gray-900 dark:hover:text-white"
                 >
-                    <icon-home class="w-5 h-5 mr-2" />
-                    {{ home }}
+                    <icon-home class="w-5 h-5" />
+                    <span
+                        class="ml-1 text-sm font-medium md:ml-2"
+                        >{{ home }}</span
+                    >
                 </Link>
+            </li>
+            <li v-if="startPage">
+                <div class="flex items-center">
+                    <icon-home class="w-5 h-5 text-gray-400" />
+                    <span
+                        class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500"
+                        >{{ home }}</span
+                    >
+                </div>
             </li>
             <li v-for="(value, key, index) in breadcrumbs" :key="index">
                 <div class="flex items-center">
@@ -68,6 +80,10 @@ export default {
         },
         breadcrumbs: {
             type: Object,
+        },
+        startPage: {
+            type: Boolean,
+            default: false,
         },
     },
 

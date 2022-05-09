@@ -1,6 +1,8 @@
 <template>
     <div :class="mode">
-        <div class="relative flex flex-col justify-start bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
+        <div
+            class="relative flex flex-col justify-start bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200"
+        >
             <!-- Header -->
             <header
                 class="w-full bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-transparent px-2 sm:px-4"
@@ -122,9 +124,7 @@
             </header>
 
             <!-- Content -->
-            <section
-                class="w-full min-h-screen px-2 sm:px-4 pb-48"
-            >
+            <section class="w-full min-h-screen px-2 sm:px-4 pb-48">
                 <div class="container mx-auto px-2 lg:px-8 pt-2 lg:pt-8">
                     <toast></toast>
                     <slot></slot>
@@ -133,14 +133,14 @@
 
             <!-- Footer -->
             <footer
-                class="w-full bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
+                class="w-full text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-transparent px-2 sm:px-4 py-2"
             >
                 <div class="container mx-auto px-2 lg:px-8 pt-2">
                     <div
                         class="lg:flex lg:items-center lg:justify-between md:p-3"
                     >
                         <ul
-                            class="lg:order-2 flex flex-wrap flex-row items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
+                            class="lg:order-2 flex flex-wrap flex-row items-center justify-center mt-3 text-sm sm:mt-0"
                         >
                             <li class="mr-2 md:mr-6 hidden md:block">
                                 <footer-link
@@ -174,7 +174,7 @@
                             </li>
                         </ul>
                         <div
-                            class="mt-4 lg:mt-0 lg:order-1 text-xs md:text-sm text-gray-500 dark:text-gray-400 text-center lg:text-left"
+                            class="mt-4 lg:mt-0 lg:order-1 text-xs md:text-sm text-center lg:text-left"
                         >
                             © 2014 - {{ year }}
                             <footer-link
@@ -188,6 +188,15 @@
                                 {{ $page.props.version.versionsdatum }}
                             </span>
                         </div>
+                    </div>
+                </div>
+                <div class="container mx-auto px-2 lg:px-8 pt-2">
+                    <div class="text-center text-xs">
+                        Mit
+                        <icon-heart-solid
+                            class="h-4 w-4 text-red-500 inline-block align-bottom"
+                        ></icon-heart-solid>
+                        gemacht von Oliver Reinking.
                     </div>
                 </div>
             </footer>
@@ -205,6 +214,7 @@ import Favicon from "@/Pages/Components/Logo/Favicon";
 
 import IconMenu from "@/Pages/Components/Icons/Menu";
 import IconClose from "@/Pages/Components/Icons/Close";
+import IconHeartSolid from "@/Pages/Components/Icons/HeartSolid";
 
 import ButtonChangeMode from "@/Pages/Components/ButtonChangeMode";
 
@@ -221,6 +231,7 @@ export default {
         Favicon,
         IconMenu,
         IconClose,
+        IconHeartSolid,
         ButtonChangeMode,
         Toast,
         CompanyName,

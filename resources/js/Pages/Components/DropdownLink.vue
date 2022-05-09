@@ -6,7 +6,7 @@
                     <slot></slot>
                 </div>
                 <div v-if="withIcon">
-                    <icon-chevron-down class="ml-2 h-4 w-h" />
+                    <icon-chevron-down class="ml-2 h-4 w-4" />
                 </div>
             </Link>
         </template>
@@ -15,7 +15,7 @@
                 <slot></slot>
             </div>
             <div v-if="withIcon">
-                <icon-chevron-down class="ml-2 h-4 w-h" />
+                <icon-chevron-down class="ml-2 h-4 w-4" />
             </div>
         </template>
     </div>

@@ -9,9 +9,9 @@
             }"
         ></breadcrumb>
 
-        <div class="mt-4 mb-8 font-logo text-2xl text-extrabold">
+        <page-title>
             Aktualisierung der Anwenderdaten
-        </div>
+        </page-title>
 
         <section-form>
             <template #title>Anwenderdaten</template>
@@ -138,6 +138,8 @@ import { defineComponent } from "vue";
 import AdminLayout from "@/Pages/Application/Admin/Shared/Layout";
 import Breadcrumb from "@/Pages/Components/Breadcrumb";
 
+import PageTitle from "@/Pages/Components/Content/PageTitle";
+
 import SectionForm from "@/Pages/Components/Content/SectionForm";
 import SectionBorder from "@/Pages/Components/Content/SectionBorder";
 
@@ -164,6 +166,7 @@ export default defineComponent({
     components: {
         AdminLayout,
         Breadcrumb,
+        PageTitle,
         SectionForm,
         SectionBorder,
         ButtonGroup,
