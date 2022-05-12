@@ -26,9 +26,9 @@ module.exports = {
                 nightprimary: "#22C55E",
                 "nightprimary-dark": "#86EFAC",
                 "nightprimary-light": "#15803D",
-                "on-nightprimary": "#1F2937",
-                "on-nightprimary-light": "#1F2937",
-                "on-nightprimary-dark": "#1F2937",
+                "on-nightprimary": "#FFFFFF",
+                "on-nightprimary-light": "#FFFFFF",
+                "on-nightprimary-dark": "#FFFFFF",
             },
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],

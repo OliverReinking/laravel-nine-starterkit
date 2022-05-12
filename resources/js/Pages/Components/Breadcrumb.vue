@@ -1,13 +1,13 @@
 <template>
     <nav
-        class="flex py-3 px-5 bg-white rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+        class="flex py-3 px-5 bg-white rounded-lg border border-gray-200 dark:bg-gray-900 dark:border-gray-700"
         aria-label="Breadcrumb"
     >
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li v-if="!startPage">
                 <Link
                     :href="route(routeDashboard)"
-                    class="flex items-center hover:text-gray-900 dark:hover:text-white"
+                    class="flex items-center hover:text-gray-900 dark:hover:text-white underline"
                 >
                     <icon-home class="w-5 h-5" />
                     <span
@@ -18,9 +18,9 @@
             </li>
             <li v-if="startPage">
                 <div class="flex items-center">
-                    <icon-home class="w-5 h-5 text-gray-400" />
+                    <icon-home class="w-5 h-5 text-gray-400 dark:text-gray-300" />
                     <span
-                        class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500"
+                        class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-200"
                         >{{ home }}</span
                     >
                 </div>
@@ -32,7 +32,7 @@
                     ></icon-breadcrumb-divider>
                     <Link
                         :href="value"
-                        class="ml-1 text-sm font-medium hover:text-gray-900 md:ml-2 dark:hover:text-white"
+                        class="ml-1 text-sm font-medium hover:text-gray-900 md:ml-2 dark:hover:text-white underline"
                         >{{ key }}</Link
                     >
                 </div>
@@ -43,7 +43,7 @@
                         class="w-5 h-5 text-gray-400"
                     ></icon-breadcrumb-divider>
                     <span
-                        class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500"
+                        class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-300"
                         >{{ current }}</span
                     >
                 </div>

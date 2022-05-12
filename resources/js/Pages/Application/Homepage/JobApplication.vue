@@ -116,7 +116,7 @@
                         <input-container :full-width="true">
                             <input-label
                                 name="continent"
-                                label="Kontinent"
+                                label="In welchem Kontinent wohnst du?"
                             ></input-label>
                             <input-radio
                                 v-model="form.continent"

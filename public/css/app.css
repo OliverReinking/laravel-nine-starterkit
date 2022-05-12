@@ -2027,11 +2027,11 @@ select {
 .pt-8 {
   padding-top: 2rem;
 }
-.pb-48 {
-  padding-bottom: 12rem;
-}
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+.pb-48 {
+  padding-bottom: 12rem;
 }
 .text-left {
   text-align: left;
@@ -2077,10 +2077,6 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -2425,7 +2421,7 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .np-dl-tr:hover:focus-within {
   --tw-text-opacity: 1;
@@ -2433,7 +2429,7 @@ select {
 }
 .dark .np-dl-tr:hover:focus-within {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .np-dl-td-normal {
   border-top-width: 1px;
@@ -2886,9 +2882,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.dark .dark\:text-gray-500 {
+.dark .dark\:text-gray-200 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 .dark .dark\:text-gray-50 {
   --tw-text-opacity: 1;
@@ -2897,10 +2893,6 @@ select {
 .dark .dark\:text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-.dark .dark\:text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 .dark .dark\:text-red-800 {
   --tw-text-opacity: 1;
@@ -2920,7 +2912,7 @@ select {
 }
 .dark .dark\:text-on-nightprimary {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .dark .dark\:text-green-500 {
   --tw-text-opacity: 1;
@@ -3266,11 +3258,6 @@ select {
 
   .sm\:text-right {
     text-align: right;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:text-4xl {
@@ -3649,12 +3636,12 @@ select {
     padding-bottom: 5rem;
   }
 
-  .lg\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .lg\:pr-5 {
     padding-right: 1.25rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
   }
 
   .lg\:text-left {
