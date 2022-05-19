@@ -213,6 +213,14 @@ Verzeichnis: resources/js/Pages/Components/Content
 </details>
 
 <details>
+    <summary>PageTitle.vue</summary>
+
+    props
+    - title
+
+</details>
+
+<details>
     <summary>SectionBorder.vue</summary>
 
 </details>

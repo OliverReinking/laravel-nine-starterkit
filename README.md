@@ -2,10 +2,10 @@
 
 Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
-- Vue 3
-- inertia
+- Vue.js 3
+- Inertia
 - Jetstream
-- tailwindcss
+- Tailwind CSS
 - Webseite
 - Anwendung für Administratoren
 - Anwendung für Mitarbeiter
@@ -14,23 +14,23 @@ Das **Laravel Nine Starterkit** besteht aus:
 
 ## Branches
 
-Damit du die Möglichkeit hast, die Entwicklung der Anwendung Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in sogenannten Branches dokumentiert.
+Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in sogenannten Branches dokumentiert.
 
 ### Installation
 Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
 
 ### Anwendung Homepage
-Die im Kapitel "Anwendung Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
+Die im Kapitel Anwendung "Homepage" beschriebenen Codeänderungen findest du im Branch "homepage".  
 Hier gibt es zusätzlich noch die Brances formular-01 und formular-02.  
 
 ### Anwendung Administrator
-Die im Kapitel "Anwendung Administrator" beschriebenen Codeänderungen findest du im Branch "administrator".  
+Die im Kapitel Anwendung "Administrator" beschriebenen Codeänderungen findest du im Branch "administrator".  
 
-### Anwendung Redakteur
-Die im Kapitel "Anwendung Redakteur" beschriebenen Codeänderungen findest du im Branch "employee".  
+### Anwendung Mitarbeiter
+Die im Kapitel Anwendung "Mitarbeiter" beschriebenen Codeänderungen findest du im Branch "employee".  
 
-### Anwendung Leser
-Die im Kapitel "Anwendung Leser" beschriebenen Codeänderungen findest du im Branch "customer".  
+### Anwendung Kunde
+Die im Kapitel Anwendung "Kunde" beschriebenen Codeänderungen findest du im Branch "customer".  
 
 ## Installation
 
@@ -85,9 +85,9 @@ Anwendung im Browser aufrufen mit **newspilot.test**
 
 ## Buch **Laravel 9**
 
-In meinen Buch **Laravel 9** habe ich die Implementierung der obigen Anwendung **Newspilot** im Detail beschrieben.  
+In meinen Buch **Laravel 9** habe ich die Implementierung der obigen Anwendungsplattform **Newspilot** im Detail beschrieben.  
 
-![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Blau_4.png)
+![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
 
 ## Anwendungsbeschreibung
 
@@ -112,9 +112,11 @@ Darunter habe ich folgende Unterverzeichnisse angelegt:
 
 #### Homepage (resources/js/Pages/Application)
 Das Verzeichnis Homepage enthält die Webseiten:
+- About.vue
+- Contact.vue
 - Home.vue (die Startseite der Homepage)
 - Imprint.vue
-- JobApplication.vue (Bewerbungsformular)- 
+- JobApplication.vue (Bewerbungsformular)
 - Mission.vue
 - NoApplicationFound.vue
 - NoPageFound.vue
@@ -129,6 +131,39 @@ Hier habe ich die Funktion share angepasst.
 ### RouteServiceProvicer
 Hier habe ich die Konstante Home angepasst. 
 
+## Funktionsumfang "Newspilot"
+In diesem Abschnitt möchte ich den Funktionsumfang der Anwendungsplattform "Newspilot" zusammenfassen:  
+- Registrierungsformular
+- Login-Formular
+- Kennwort-Vergessen-Formular
+- Formular zur Änderung der persönlichen Daten
+    - Änderung des Namens und der Mailadresse
+    - Hochladen eines "Anwenderbildes"
+    - Aktivierung einer Zwei-Faktor-Authentifizierung
+    - Löschen des Accounts
+- Homepage
+    - mit Formular (in unserem Beispiel ein Bewerbungsformular)
+        - Versand der im Formular eingegebenen Daten per Mail
+    - Impressum und Datenschutzerklärung
+        - Basis sind jeweils Markdown-Dateien
+    - Nacht-Modus
+        - der Anwender hat die Möglichkeit, einen Nach-Modus einzuschalten
+- Anwendung für "Administratoren"
+    - Startseite (Dashboard) mit Statistikwerten
+    - Liste aller Anwender inklusive Anwendersuche
+    - Anzeige aller Daten eines Anwenders
+    - Formular zum Abändern von Anwenderdaten
+    - Löschen eines Anwenders
+    - Seite mit allen verwendeten Child-Komponenten (Documentation.vue)
+- Anwendung für "Mitarbeiter"
+    - Startseite (Dashboard)
+- Anwendung für "Kunde"
+    - Startseite (Dashboard)
+- die Anwendungen "Administrator", "Mitarbeiter" und "Kunde"
+    - besitzen einen Header und einer Sidebar
+    - besitzen eine "Brotkrümel-Navigation" (Child-Komponente Breadcrumb.vue)
+    - besitzen einen "Anwendungswechsler"
+    - besitzen einen "Nacht-Modus"
 
 ## License
 
