@@ -3,7 +3,7 @@ return [
     // Version
     'version' => [
         'versionnr' => '1.0.0',
-        'versionsdatum' => '10.04.2022',
+        'versionsdatum' => '21.05.2022',
     ],
     // Mailadressen
     'mail' => [
