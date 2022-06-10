@@ -82,11 +82,11 @@ npm run watch
 Anwendung im Browser aufrufen mit **newspilot.test**
 
 
-## Buch **Laravel 9**
+## Buch **Die ersten Schritte in Laravel 9**
 
 In meinen Buch **Die ersten Schritte in Laravel 9** habe ich die Implementierung der obigen Anwendungsplattform **Newspilot** im Detail beschrieben.  
 
-![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
+![Die ersten Schritte in Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
 
 ## Anwendungsbeschreibung
 
