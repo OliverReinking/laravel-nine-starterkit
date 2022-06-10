@@ -166,24 +166,34 @@ In diesem Abschnitt möchte ich den Funktionsumfang der Anwendungsplattform "New
 
 ## Screenshots der Anwendungsplattform "Newspilot"
 
+### Anwendung Homepage - Startseite
 ![Anwendung Homepage - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_001.png)
 
+### Anwendung Homepage - Bewerbungsformular
 ![Anwendung Homepage - Bewerbungsformular](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_002.png)
 
+### Anwendung Homepage - Bewerbungsformular im Nachtmodus
 ![Anwendung Homepage - Bewerbungsformular im Nachtmodus](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_003.png)
 
+### Login
 ![Login](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_004.png)
 
+### Anwendung Administrator - Startseite
 ![Anwendung Administrator - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_005.png)
 
+### Anwendung Administrator - Liste der Anwender
 ![Anwendung Administrator - Liste der Anwender](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_006.png)
 
+### Anwendung Administrator - Aktualisierung der Anwenderdaten
 ![Anwendung Administrator - Aktualisierung der Anwenderdaten](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_007.png)
 
-![Anwendung Administrator - Aktualisierung der Anwenderdaten - Smartphone](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_008.png)
+### Anwendung v - Aktualisierung der Anwenderdaten im Smartphone
+![Anwendung Administrator - Aktualisierung der Anwenderdaten im Smartphone](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_008.png)
 
+### Anwendung Mitarbeiter - Startseite
 ![Anwendung Mitarbeiter - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_009.png)
 
+### Anwendung Kunde - Startseite
 ![Anwendung Kunde - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_010.png)
 
 
