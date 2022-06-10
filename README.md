@@ -187,7 +187,7 @@ In diesem Abschnitt möchte ich den Funktionsumfang der Anwendungsplattform "New
 ### Anwendung Administrator - Aktualisierung der Anwenderdaten
 ![Anwendung Administrator - Aktualisierung der Anwenderdaten](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_007.png)
 
-### Anwendung v - Aktualisierung der Anwenderdaten im Smartphone
+### Anwendung Administrator - Aktualisierung der Anwenderdaten im Smartphone
 ![Anwendung Administrator - Aktualisierung der Anwenderdaten im Smartphone](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_008.png)
 
 ### Anwendung Mitarbeiter - Startseite
