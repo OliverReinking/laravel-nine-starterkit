@@ -5,16 +5,15 @@ Das **Laravel Nine Starterkit** besteht aus:
 - Vue.js 3
 - Inertia
 - Jetstream
-- Tailwind CSS
-- Webseite
-- Anwendung für Administratoren
-- Anwendung für Mitarbeiter
-- Anwendung für Kunden
+- Tailwind CSS 3
+- Homepage
+- Anwendung für "Administratoren"
+- Anwendung für "Mitarbeiter"
+- Anwendung für "Kunden"
     
-
 ## Branches
 
-Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in sogenannten Branches dokumentiert.
+Damit du die Möglichkeit hast, die Entwicklung der Anwendungsplattform Newspilot nachzuvollziehen, habe ich unterschiedliche Entwicklungszustände in Branches dokumentiert.
 
 ### Installation
 Die im Kapitel "Implementierung" beschriebenen Codeänderungen findest du im Branch "installation".  
@@ -85,7 +84,7 @@ Anwendung im Browser aufrufen mit **newspilot.test**
 
 ## Buch **Laravel 9**
 
-In meinen Buch **Laravel 9** habe ich die Implementierung der obigen Anwendungsplattform **Newspilot** im Detail beschrieben.  
+In meinen Buch **Die ersten Schritte in Laravel 9** habe ich die Implementierung der obigen Anwendungsplattform **Newspilot** im Detail beschrieben.  
 
 ![Laravel 9](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Vorderseite_Dunkel.png)
 
@@ -164,6 +163,29 @@ In diesem Abschnitt möchte ich den Funktionsumfang der Anwendungsplattform "New
     - besitzen eine "Brotkrümel-Navigation" (Child-Komponente Breadcrumb.vue)
     - besitzen einen "Anwendungswechsler"
     - besitzen einen "Nacht-Modus"
+
+## Screenshots der Anwendungsplattform "Newspilot"
+
+![Anwendung Homepage - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_001.png)
+
+![Anwendung Homepage - Bewerbungsformular](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_002.png)
+
+![Anwendung Homepage - Bewerbungsformular im Nachtmodus](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_003.png)
+
+![Login](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_004.png)
+
+![Anwendung Administrator - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_005.png)
+
+![Anwendung Administrator - Liste der Anwender](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_006.png)
+
+![Anwendung Administrator - Aktualisierung der Anwenderdaten](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_007.png)
+
+![Anwendung Administrator - Aktualisierung der Anwenderdaten - Smartphone](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_008.png)
+
+![Anwendung Mitarbeiter - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_009.png)
+
+![Anwendung Kunde - Startseite](https://github.com/OliverReinking/laravel-nine-starterkit/blob/master/public/images/Newspilot_010.png)
+
 
 ## License
 
