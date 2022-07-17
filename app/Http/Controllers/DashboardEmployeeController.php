@@ -11,4 +11,11 @@ class DashboardEmployeeController extends Controller
     {
         return Inertia::render('Application/Employee/Dashboard');
     }
+    //
+    public function employee_profile(Request $request)
+    {
+        return Inertia::render('Application/Employee/Profile', [
+            'sessions' => ApplicationController::sessions($request)->all(),
+        ]);
+    }
 }

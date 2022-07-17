@@ -11,4 +11,11 @@ class DashboardCustomerController extends Controller
     {
         return Inertia::render('Application/Customer/Dashboard');
     }
+    //
+    public function customer_profile(Request $request)
+    {
+        return Inertia::render('Application/Customer/Profile', [
+            'sessions' => ApplicationController::sessions($request)->all(),
+        ]);
+    }
 }

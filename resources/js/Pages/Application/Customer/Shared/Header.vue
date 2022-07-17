@@ -68,7 +68,7 @@
                             Meine Daten
                         </div>
 
-                        <dropdown-link route-name="admin.profile" :with-route="true">
+                        <dropdown-link route-name="customer.profile" :with-route="true">
                             Persönliche Einstellungen
                         </dropdown-link>
 

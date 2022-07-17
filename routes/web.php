@@ -108,6 +108,11 @@ Route::middleware([
         // Dashboard
         Route::get('/employee/dashboard', [DashboardEmployeeController::class, 'employee_index'])
             ->name('employee.dashboard');
+        // =======
+        // Profile
+        // =======
+        Route::get('/employee/profile', [DashboardEmployeeController::class, 'employee_profile'])
+            ->name('employee.profile');
     });
 
     // ====================
@@ -117,6 +122,11 @@ Route::middleware([
         // Dashboard
         Route::get('/customer/dashboard', [DashboardCustomerController::class, 'customer_index'])
             ->name('customer.dashboard');
+        // =======
+        // Profile
+        // =======
+        Route::get('/customer/profile', [DashboardCustomerController::class, 'customer_profile'])
+            ->name('customer.profile');
     });
 });
 

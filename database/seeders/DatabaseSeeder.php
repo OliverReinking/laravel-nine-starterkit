@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -29,7 +30,7 @@ class AdminSeeder extends Seeder
         User::create([
             'name' => 'Oliver Reinking',
             'email' => 'admin@newspilot.de',
-            'email_verified_at' => now(),
+            'email_verified_at' => Carbon::now(),
             'password' => Hash::make('12345678'),
             'is_admin' => true,
             'is_employee' => false,
