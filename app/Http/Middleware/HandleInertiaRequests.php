@@ -62,7 +62,7 @@ class HandleInertiaRequests extends Middleware
                 return [
                     'app_admin' => 'admin',
                     'app_employee' => 'employee',
-                    'app_customer' => 'custoner',
+                    'app_customer' => 'customer',
                     'app_admin_name' => 'Administrator-Dashboard',
                     'app_employee_name' => 'Mitarbeiter-Dashboard',
                     'app_customer_name' => 'Kunden-Dashboard',

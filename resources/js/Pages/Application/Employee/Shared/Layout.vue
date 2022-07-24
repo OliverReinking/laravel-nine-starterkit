@@ -19,7 +19,9 @@
                         class="container mx-auto w-full md:max-w-5xl px-2 py-4 md:px-6 md:py-8"
                     >
                         <toast class="mb-6"></toast>
-                        <slot />
+                        <div class="mb-6">
+                            <slot />
+                        </div>
                     </div>
                     <div
                         class="fixed bottom-0 left-0 right-0 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 border-t border-sunprimary"
