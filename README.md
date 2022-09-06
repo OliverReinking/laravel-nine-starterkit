@@ -1,5 +1,13 @@
 # Laravel Nine Starterkit
 
+
+## Wichtiger Hinweis!
+Dieses Package ist nicht mehr aktuell.  
+Das aktuelle Package heißt Newspilot.  
+[https://github.com/OliverReinking/newspilot.git](https://github.com/OliverReinking/newspilot.git)
+
+
+
 Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
 - Vue.js 3
