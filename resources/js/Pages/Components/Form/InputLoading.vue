@@ -7,7 +7,7 @@
         <div class="flex items-center">
             <svg
                 role="status"
-                class="mr-2 w-8 h-8 text-blue-400 dark:text-blue-700 animate-spin dark:text-gray-600 fill-blue-800 dark:fill-blue-200"
+                class="mr-2 w-8 h-8 text-blue-400 dark:text-blue-700 animate-spin fill-blue-800 dark:fill-blue-200"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

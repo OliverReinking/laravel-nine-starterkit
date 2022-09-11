@@ -54,8 +54,8 @@
 <script>
 import { Link } from "@inertiajs/inertia-vue3";
 
-import IconHome from "@/Pages/Components/Icons/Home";
-import IconBreadcrumbDivider from "@/Pages/Components/Icons/BreadcrumbDivider";
+import IconHome from "@/Pages/Components/Icons/Home.vue";
+import IconBreadcrumbDivider from "@/Pages/Components/Icons/BreadcrumbDivider.vue";
 
 export default {
     name: "Components_Breadcrumb",
