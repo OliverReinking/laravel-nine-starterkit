@@ -5,6 +5,19 @@ Dieses Package ist nicht mehr aktuell.
 Das aktuelle Package heißt Newspilot.  
 [https://github.com/OliverReinking/newspilot.git](https://github.com/OliverReinking/newspilot.git)
 
+### Hintegrund
+Laravel arbeitet seit dem 01.07.2022 nicht mehr mit webpack zusammen, sondern mit vite.
+Aus diesem Grund habe ich das neue Package Newspilot erstellt.
+Die Beispiele im Buch bleiben im Großen und Ganzen unverändert.
+In den Vue-Dateien muss beim Import lediglich die Dateiendung .vue angegeben werden.
+Oftmals habe ich einen Import so codiert:
+```js
+import AdminLayout from "@/Pages/Application/Employee/Shared/Layout";
+```
+Damit vite funktioniert muss man allerdings die Dateiendung .vue angeben
+```js
+import AdminLayout from "@/Pages/Application/Employee/Shared/Layout.vue";
+```
 
 Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
