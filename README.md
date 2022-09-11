@@ -20,10 +20,8 @@ Damit vite funktioniert muss man allerdings die Dateiendung .vue angeben
 import AdminLayout from "@/Pages/Application/Employee/Shared/Layout.vue";
 ```
 
-<div style="background-color:#ccc">
-adf
-</div>
 
+## Bestandteile
 Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
 - Vue.js 3
