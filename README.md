@@ -1,6 +1,5 @@
 # Laravel Nine Starterkit
 
-<div style="background-color:#CCC">
 
 ## Wichtiger Hinweis!
 Dieses Package ist nicht mehr aktuell.  
@@ -21,6 +20,8 @@ Damit vite funktioniert muss man allerdings die Dateiendung .vue angeben
 import AdminLayout from "@/Pages/Application/Employee/Shared/Layout.vue";
 ```
 
+<div style="background-color:#ccc">
+adf
 </div>
 
 Das **Laravel Nine Starterkit** besteht aus:
