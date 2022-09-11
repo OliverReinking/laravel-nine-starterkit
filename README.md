@@ -1,11 +1,13 @@
 # Laravel Nine Starterkit
 
+<span style="background-color:#cccccc">
+
 ## Wichtiger Hinweis!
 Dieses Package ist nicht mehr aktuell.  
 Das aktuelle Package heißt Newspilot.  
 [https://github.com/OliverReinking/newspilot.git](https://github.com/OliverReinking/newspilot.git)
 
-### Hintegrund
+### Hintergrund
 Laravel arbeitet seit dem 01.07.2022 nicht mehr mit webpack zusammen, sondern mit vite.
 Aus diesem Grund habe ich das neue Package Newspilot erstellt.
 Die Beispiele im Buch bleiben im Großen und Ganzen unverändert.
@@ -18,6 +20,8 @@ Damit vite funktioniert muss man allerdings die Dateiendung .vue angeben
 ```js
 import AdminLayout from "@/Pages/Application/Employee/Shared/Layout.vue";
 ```
+
+<span>
 
 Das **Laravel Nine Starterkit** besteht aus:
 - Laravel 9
